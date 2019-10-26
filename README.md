@@ -29,4 +29,13 @@ npm run lint
 npm run electron:build
 ```
 
+## 分支管理
+### Feature一類
+####以功能區分的個人topic
+####命名
+```
+fe-功能（頁面）--github username
+```
+
+
 
