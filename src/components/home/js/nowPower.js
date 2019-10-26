@@ -39,6 +39,5 @@ gauge.setMinValue(0); // Prefer setter over gauge.minValue = 0
 gauge.set(950); // set actual value
 
 setInterval(function() {
-    value = Math.floor(Math.random() * 2500) + 0;
-    gauge.set(value); // set actual value
+    gauge.set(Math.floor(Math.random() * 2500) + 0); // set actual value
 }, 2000);

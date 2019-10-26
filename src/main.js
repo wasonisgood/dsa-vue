@@ -10,6 +10,11 @@ import 'bootstrap/dist/js/bootstrap.min'
 import './assets/css/frameworkV2.css'
 import './assets/css/icon.css'
 
+import "./assets/js/gauge.min.js"
+import "./assets/js/highcharts.js"
+
+import { CollapsePlugin } from 'bootstrap-vue'
+Vue.use(CollapsePlugin)
 Vue.config.productionTip = false
 Vue.component('Header', Header)
 Vue.component('Footer', Footer)

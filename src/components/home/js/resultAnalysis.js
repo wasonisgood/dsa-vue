@@ -1,4 +1,4 @@
-var chartSize = window.innerWidth >= 768 ? 200 : 150;
+var chartSize = window.innerWidth > 992 ? (window.innerWidth - 768) * 0.0434 + 150 : 200 ;
 window.pieData = [{
         name: 'NXV1020A',
         y: 70,
@@ -23,12 +23,12 @@ let ReSet = (num) => {
     PieChart.series[2].data[pieView].sliced = true
     PieChart.series[2].data[pieView].selected = true
     let series = PieChart.series[0];
-    list = series.data
+    let list = series.data
     PieChart.series[2].setData(PieChart.series[2].data, true);
     window.PieChart.setTitle({
         text: `<div style="text-align: center;">
         <div>${list[num].name}</div>
-        <div style="font-size:1.25rem;font-weight: 700;">${list[num].y}%</div>
+        <div style="font-size:1.25rem;font-weight: 700;padding-top:-2rem">${list[num].y}%</div>
         <hr style="margin:.25rem; border-top: 1px solid #A8ACC2; width: 6rem;">
         <div>總計:${list[num].z}件</div>
     </div>`
@@ -181,8 +181,8 @@ window.window.PieChart = Highcharts.chart('resultAnalysis-content', {
 window.pieView = 0
 window.pieCarousel = () => {
     window.pieDatas = [...window.PieChart.series[0].points]
-    list = window.pieData
-    num = window.pieView++ % window.pieData.length;
+    let list = window.pieData
+    let num = window.pieView++ % window.pieData.length;
     let name = document.getElementsByClassName('resultAnalysis-name')
     let number = document.getElementsByClassName('resultAnalysis-number')
 
@@ -207,7 +207,7 @@ window.pieCarousel = () => {
 
 
     window.PieChart.setTitle({
-        text: `<div style="text-align: center; color: #6A7BAF;">
+        text: `<div style="text-align: center; color: #6A7BAF;margin-top:-10%">
         <div>${list[num].name}</div>
         <div style="font-size:1.25rem;font-weight: 700;">${list[num].y} %</div>
         <hr style="margin:.25rem; border-top: 1px solid #A8ACC2; width: 6rem;">

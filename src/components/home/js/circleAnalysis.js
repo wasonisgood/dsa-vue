@@ -18,11 +18,10 @@ var positionY = 150;
 var radius = 100;
 
 
-setInterval(function() {
+setInterval(function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < data["obj"].length; i++) {
-        value = Math.floor(Math.random() * 100) + 0;
-        data["obj"][i].value = value;
+        data["obj"][i].value = Math.floor(Math.random() * 100) + 0;
     }
     drawBase();
 }, 1000);
@@ -31,7 +30,8 @@ canvas = document.getElementById('myCanvas');
 ctx = canvas.getContext('2d');
 canvas.width = "300";
 canvas.height = "300";
-canvas.style.width = "230px";
+canvas.style.width = "80%"
+canvas.style.height = "100%"
 canvas.style.border = "hidden";
 
 drawBase();
