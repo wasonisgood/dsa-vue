@@ -1,21 +1,34 @@
 <template>
-    <router-view />
+  <div id="app">
+    <router-view  /> 
+   
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+}
 </script>
 
 <style lang="scss">
 * {
-    margin: 0%;
+  margin: 0%;
 }
 #app {
-    font-family: Microsoft JhengHei;
+  font-family:Microsoft JhengHei;
+  font-weight:bolder;
+  font-size:12pt;
+  -webkit-font-smoothing: antialiased;
+  height:100%;
+}
+#nav {
+  padding: 30px;
+  a {
     font-weight: bolder;
-    font-size: 12px;
-    -webkit-font-smoothing: antialiased;
-    height: 100%;
-    background-color: #eaeff8;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>

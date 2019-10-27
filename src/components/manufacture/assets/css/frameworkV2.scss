@@ -1,0 +1,97 @@
+*{
+    font-weight: 900;
+}
+
+.bar{
+    width: 100vw;
+    height: 100px;
+    background-image: linear-gradient(to right, #bcc6da, #245b91, #172846);
+    color: white;
+}
+
+li{
+    text-align: center;
+    width: 60px;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+.navMiddle{
+    margin: 0 50px;
+    line-height: 30px;
+}
+
+.navright{
+    margin:0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    width: 100vw;
+    height: 40px;
+    background-color: #181f31;
+    position: absolute;
+    bottom: 0;
+    color: white;
+        .chineseCompanyName{
+            font-size: 15px;
+            font-family: "微軟正黑體",sans-serif;
+        }
+        .engCompanyName{
+            font-size: 12px;
+            font-family: 'Russo One', sans-serif;
+        }
+        .footerSpan{
+            font-size: 9px;
+            font-family: 'Russo One', sans-serif;
+        }
+}
+
+.logo{
+    width: 150px;
+    height: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+    .navMiddle{
+        margin: 15px;
+    }
+
+    .navright{
+        margin: 15px;
+    }
+    
+    .logo{
+        width: 90px !important;
+        height: 50px  !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo{
+        width: 75px !important;
+        height: 40px  !important;
+    }
+}
+
+.icon{
+    width: 30px;
+    height: 25px;
+}
+
+.envelope{
+    width: 24px;
+    height: 24px;
+}
+
+#time{
+    margin-left: 80px;
+}
+
+.co{
+    margin-right: 80px;
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+* {
+	font-weight: 900;
+}
+@media (max-width: 576px) {
+	.logo{
+		-webkit-transform : scale(0.85);
+	}
+	.icon{
+		-webkit-transform : scale(0.8);
+	}
+	.co{
+		-webkit-transform : scale(0.8);
+	}
+	#time{
+		-webkit-transform : scale(0.8);
+	}
+}
+
+@media (max-width: 768px) {
+	html{
+		font-size:12px !important;
+	}
+}
+
+@media (max-width: 992px){
+	#time {
+		margin: 0 !important;
+	}
+	.co{
+		margin: 0 !important;
+	}
+	.co span{
+		float:right;
+	}
+	.badge{
+		position: relative !important;
+		float: left !important;
+		top: 0;
+		left:40px;
+		background-color: #fff;
+
+	}
+	#navMiddle-container{
+		margin-left: 0 !important;
+	}
+	.logo {
+		margin-top: 0.5rem;
+		width: 9rem !important;
+		height: 3.8rem !important;
+		margin-left: 0 !important;
+	}
+	.navbar {
+		min-height: 5rem !important;
+	}
+}
+
+@media (max-width: 1400px){
+	html{
+		font-size: 12px;
+	}
+	#time {
+		margin: 0 !important;
+	}
+	.co{
+		margin: 0 !important;
+	}
+	.co span{
+		float:right;
+	}
+	#navMiddle-container{
+		margin-left: 1vw !important;
+	}
+	.navMiddle span{
+		font-size: 0.6rem !important;
+	}
+}
+footer {
+	width: 100vw;
+	height: 5.83vh;
+	background-color: #181f31;
+	position: fixed;
+	bottom: 0;
+	color: white;
+}
+
+footer .chineseCompanyName {
+	font-size: 0.9375rem;
+	font-family: "微軟正黑體",sans-serif;
+}
+
+footer .engCompanyName {
+	font-size: 0.75rem;
+	font-family: 'Russo One', sans-serif;
+}
+
+footer .footerSpan {
+	font-size: 0.56rem;
+	font-family: 'Russo One', sans-serif;
+}
+
+li {
+	text-align: center;
+	width: 4rem;
+}
+
+
+.avatar{
+	height: 2.25rem;
+	width: 2.25rem;
+}
+
+.badge-success{
+	background-color: #FFF !important;
+	color: #162947 !important;
+}
+
+.bar {
+	background-image: -webkit-gradient(linear, left top, right top, from(#bcc6da), color-stop(#245b91), to(#172846));
+	background-image: linear-gradient(to right, #bcc6da, #245b91, #172846);
+	color: white;
+}
+
+.co {
+	margin-right: 4.17vw;
+}
+
+.envelope {
+	width: 2.22vw;
+	height: 1.25vh;
+}
+
+.icon {
+	width: 2.25vw;
+	height: 3.7vh;
+}
+
+.logo {
+	width: 9.375vw;
+	height: 7.4vh;
+	margin-left: 2.92vw;
+}
+
+.material-icons{
+	font-size: 2rem;
+	color: #fff;
+}
+
+.navbar {
+	min-height: 12vh;
+}
+
+.navbar-nav a{
+	color:#fff !important; 
+}
+
+.navbar-nav > li > a {
+	padding-top: 2.96vh;
+	padding-bottom: 2.96vh;
+	line-height: 1.48vh;
+}
+
+.navbar-custom-menu{
+	padding-top: 0.75vh;
+}
+
+.navbar-custom-menu .icon{
+	height: 2.6vh;
+}
+
+.navbar-nav {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+.navMiddle {
+	width: 9vw;
+	line-height: 2.78vh;
+}
+
+.navMiddle span{
+	font-size: 0.8rem;
+}
+
+.navright {
+	margin: 0 0.9rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#collapseToggler{
+	width:100%;
+}
+
+#navMiddle-container{
+	padding-top: 1.48vh;
+	margin-left: 10vw;
+}
+
+#time {
+	margin-left: 4.17vw;
+}
+/*# sourceMappingURL=frameworkV2.css.map */

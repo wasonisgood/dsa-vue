@@ -1,0 +1,406 @@
+.home {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+hr {
+    margin: 0 .25rem !important;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1) !important;
+}
+
+.row {
+    padding: 0 15px;
+}
+
+.home-content {
+    padding: 0 15px;
+    border: 0;
+}
+
+.content-body {
+    border: 0.1rem solid #bbc4d2;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.workTitle {
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #444A5A;
+    float: left;
+    font-weight: bold;
+}
+
+.system-title {
+    color: #6A7BAF;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 30px;
+    background-color: #ECF0F9;
+}
+
+.table-header {
+    border-top: 1px #6c81ba solid;
+    border-bottom: 1px #6c81ba solid;
+    color: #2d3d4f;
+    padding: 0.5rem 0;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.table-value {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.table-value .row {
+    border-top: 1px #6c81ba solid;
+    font-size: 14px;
+    color: #6a7cb1;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.delivery-box {
+    width: 20px;
+    height: 20px;
+}
+
+/* for totalPower  */
+
+.totalPower-data {
+    border-top: 2px #C6CAD5 solid;
+    padding: 0.8rem 0;
+    font-size: 15px;
+    color: #6677A8;
+    height: 25%;
+}
+
+.totalPower-field {
+    border-right: 2px #C6CAD5 solid;
+    padding: 0 !important;
+}
+
+.progress-bar-blue {
+    text-align: right;
+    padding-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    background: #8596C1;
+}
+
+.progress-bar-green {
+    text-align: right;
+    padding-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    background: #78BAB5;
+}
+
+.progress-bar-blue-green {
+    text-align: right;
+    padding-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    background: #19B0C8;
+}
+
+.progress-bar-light-blue {
+    text-align: right;
+    padding-right: 5px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    background: #59C2D9;
+}
+
+.progress-container {
+    width: 100%;
+    height: 30px;
+    background: #e8ebee;
+    font-weight: 700;
+    position: relative;
+}
+
+/* for machining_workpiece */
+
+.cellContent {
+    padding: 5% 0;
+    height: 100%;
+}
+
+#collapseMW {
+    height: 100%;
+}
+
+.blockMW {
+    position: relative;
+    height: 50%;
+    max-width: 250px;
+    margin: auto;
+}
+
+.blockMW__title {
+    position: absolute;
+    width: 68%;
+}
+
+.blockMW__title>div {
+    letter-spacing: 2;
+    line-height: 19px;
+    font-size: 12px;
+    padding-left: 26px;
+    height: 40px;
+    font-weight: 700;
+    color: #FFF;
+    clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 114px) 100%, 14px 100%, 0 50%);
+    -webkit-clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%);
+}
+
+.blockMW__content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 19px;
+    left: 2px;
+    filter: drop-shadow(1px 4px 6px rgba(50, 50, 0, 0.3));
+}
+
+.blockMW__content>div {
+    font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
+    letter-spacing: 0.8;
+    margin-left: 3px;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 16.5px;
+    background-color: #FFF;
+    clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%);
+    -webkit-clip-path: polygon(20px 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 20px 100%, 0 50%);
+}
+
+.BG-color_blue {
+    background-color: #8092b9;
+}
+
+.color_blue {
+    color: #8092b9;
+}
+
+.BG-color_green {
+    background-color: #19b0c6;
+}
+
+.color_green {
+    color: #19b0c6;
+}
+
+/* for resultAnalysis */
+
+.resultAnalysis-items {
+    height: 50%;
+    padding: 1.5rem 0;
+}
+
+.resultAnalysis-item {
+    width: 30%;
+    float: left;
+}
+
+.resultAnalysis-chart {
+    height: 100%;
+    width: 70%;
+    float: left;
+}
+
+/* checkbox */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]+label {
+    color: #f2f2f2;
+    margin: 0;
+    height: 20px;
+}
+
+input[type="checkbox"]+label span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../../../assets/home/img/uncheck.png");
+    background-size: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label span {
+    background: url("../../../assets/home/img/check.png");
+    background-size: 20px;
+}
+
+/* for rwd screen */
+
+@media screen and (min-width: 992px) {
+    body {
+        overflow-y: hidden;
+    }
+    .system-status {
+        z-index: 1;
+        margin-bottom: -70px;
+    }
+    .w-lg-20 {
+        float: left;
+        width: 20%;
+        padding: 5px 15px;
+    }
+    .w-lg-40 {
+        float: left;
+        width: 40%;
+        padding: 5px 15px;
+    }
+    .w-lg-50 {
+        float: left;
+        width: 50%;
+        padding: 5px 15px;
+    }
+    .w-lg-60 {
+        float: left;
+        width: 60%;
+        padding: 5px 15px;
+    }
+    .w-lg-80 {
+        float: left;
+        width: 80%;
+        padding: 5px 15px;
+    }
+    .w-lg-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .hide-on-computer {
+        display: none;
+    }
+    .table-header {
+        width: calc(100% - 17px);
+    }
+    .image-bg {
+        width: 80%;
+    }
+    .h-lg-100 {
+        height: 100%;
+    }
+    .h-lg-90 {
+        height: 90%;
+    }
+    .h-lg-80 {
+        height: 80%;
+    }
+    .h-lg-60 {
+        height: 60%;
+    }
+    .h-lg-40 {
+        height: 40%;
+    }
+    .h-lg-10 {
+        height: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .w-xs-15 {
+        float: left;
+        width: 15%;
+        padding: 5px 15px;
+    }
+    .w-xs-20 {
+        float: left;
+        width: 20%;
+        padding: 5px 15px;
+    }
+    .w-xs-25 {
+        float: left;
+        width: 25%;
+        padding: 5px 15px;
+    }
+    .w-xs-30 {
+        float: left;
+        width: 30%;
+        padding: 5px 15px;
+    }
+    .w-xs-70 {
+        float: left;
+        width: 70%;
+        padding: 5px 15px;
+    }
+    .w-xs-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .hide-on-phone {
+        display: none;
+    }
+    .table-value {
+        overflow: hidden;
+        max-height: none;
+        font-size: 12px;
+    }
+    .container-on-phone {
+        padding: 0;
+    }
+    .table-value .row {
+        border-top: none;
+        padding: 0;
+    }
+    .table-value .row div, .table-header .row div {
+        padding: 0;
+        -webkit-transform: scale(0.6);
+    }
+    .finished {
+        background-color: #DEF1D5;
+    }
+    .unfinished {
+        background-color: #FFCDAD;
+    }
+    .table-value .row {
+        height: 20px;
+        line-height: 20px;
+    }
+    .system-title {
+        font-size: 12px;
+        margin-left: 0;
+        -webkit-transform: scale(0.7);
+    }
+    .status-phone {
+        -webkit-transform: scale(0.7);
+    }
+    .system-status {
+        padding: 0;
+    }
+    .image-bg {
+        width: 100%;
+    }
+    .blockMW {
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .resultAnalysis-items {
+        padding: 3rem 0;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .h-xl-100 {
+        height: 100%;
+    }
+}

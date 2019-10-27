@@ -10,58 +10,58 @@
                 <div id="navMiddle-container" class="mr-4">
                     <ul class="navbar-nav d-flex justify-content-between">
                         <li class="nav-item navMiddle">
-                            <a href="#">
+                            <router-link tag="a" to="/System">
                                 <img src="@/assets/header/img/icon-05.png" class="icon" alt="" />
-                            </a>
+                            </router-link>
                             <br />
-                            <a href="#">
+                            <router-link tag="a" to="/System">
                                 <span>系統首頁</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item navMiddle">
-                            <a href="../machine/index.html">
+                            <router-link tag="a" to="/machine">
                                 <img src="@/assets/header/img/icon-04.png" class="icon" alt="" />
-                            </a>
+                            </router-link>
                             <br />
-                            <a href="../machine/index.html">
+                            <router-link tag="a" to="/machine">
                                 <span>設備狀態</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item navMiddle">
-                            <a href="../sysanalyze/index.html">
+                            <router-link tag="a" to="/analysis">
                                 <img src="@/assets/header/img/icon-02.png" class="icon" alt="" />
-                                <br />
-                            </a>
-                            <a href="../sysanalyze/index.html">
+                            </router-link>
+                            <br />
+                            <router-link tag="a" to="/analysis">
                                 <span>智能分析</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item navMiddle">
-                            <a href="../manufacture/manufacture/power_analysis.html">
+                            <router-link tag="a" to="/manufacture">
                                 <img src="@/assets/header/img/icon-03.png" class="icon" alt="" />
-                                <br />
-                            </a>
-                            <a href="../manufacture/manufacture/power_analysis.html">
+                            </router-link>
+                            <br />
+                            <router-link tag="a" to="/manufacture">
                                 <span>生產管理</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item navMiddle">
-                            <a href="../break/#/malfunction">
+                            <router-link tag="a" to="/malfunction">
                                 <img src="@/assets/header/img/icon-06.png" class="icon" alt="" />
-                            </a>
+                            </router-link>
                             <br />
-                            <a href="../break/#/malfunction">
+                            <router-link tag="a" to="/malfunction">
                                 <span>故障管理</span>
-                            </a>
+                            </router-link>
                         </li>
                         <li class="nav-item navMiddle">
-                            <a href="../tool-info/index.html">
+                            <router-link tag="a" to="/tool">
                                 <img src="@/assets/header/img/icon-07.png" class="icon" alt="" />
-                            </a>
+                            </router-link>
                             <br />
-                            <a href="../tool-info/index.html">
-                                <span>刀具分析</span>
-                            </a>
+                            <router-link tag="a" to="/tool">
+                                <span>刀具管理</span>
+                            </router-link>
                         </li>
                     </ul>
                 </div>
@@ -178,39 +178,34 @@
                                 <img src="@/assets/header/img/member-phone.png" class="icon ml-0" width="60" alt="" />USER
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="../tool-info/index.html">
-                                <img src="@/assets/header/img/icon-07-phone.png" class="icon" width="30" alt="" />刀具分析
-                            </a>
+                        <li class="nav-item">                            
+                            <router-link tag="a" to="/machine">
+                                <img class="icon" src="@/assets/header/img/icon-04-phone.png" width="30" />設備狀態
+                            </router-link>
+                        </li>
+                        <li class="nav-item">           
+                            <router-link tag="a" to="/analysis">
+                                <img class="icon" src="@/assets/header/img/icon-02-phone.png" width="30" />智能分析
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a href="../machine/index.html">
-                                <img src="@/assets/header/img/icon-04-phone.png" class="icon" width="30" alt="" />設備狀態
-                            </a>
+                            <router-link tag="a" to="/manufacture">
+                                <img class="icon" src="@/assets/header/img/icon-03-phone.png" width="30" />生產管理
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a href="../sysanalyze/index.html">
-                                <img src="@/assets/header/img/icon-02-phone.png" class="icon" width="30" alt="" />智能分析
-                            </a>
+                            <router-link tag="a" to="/malfunction">
+                                <img class="icon" src="@/assets/header/img/icon-06-phone.png" width="30" />故障管理
+                            </router-link>
                         </li>
                         <li class="nav-item">
-                            <a href="../manufacture/manufacture/power_analysis.html">
-                                <img src="@/assets/header/img/icon-03-phone.png" class="icon" width="30" alt="" />生產管理
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../break/#/malfunction">
-                                <img src="@/assets/header/img/icon-06-phone.png" class="icon" width="30" alt="" />故障管理
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../tool-info/index.html">
-                                <img src="@/assets/header/img/icon-07-phone.png" class="icon" width="30" alt="" />刀具分析
-                            </a>
+                            <router-link tag="a" to="/tool">
+                                <img src="@/assets/header/img/icon-07-phone.png" class="icon" width="30" alt="" />刀具管理
+                            </router-link>
                         </li>
                         <li class="nav-item">
                             <router-link tag="a" to="">
-                                <img class="icon" width="30" src="@/assets/header/img/icon-08-phone.png" />您的信箱
+                                <img class="icon" src="@/assets/header/img/icon-08-phone.png" width="30" />您的信箱
                             </router-link>
                         </li>
                         <hr />
@@ -224,4 +219,6 @@
 export default {};
 </script>
 <style>
+@import url("../../assets/css/frameworkV2.css");
+@import url("../../assets/css/icon.css");
 </style>
