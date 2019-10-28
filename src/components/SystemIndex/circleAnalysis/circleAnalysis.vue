@@ -31,7 +31,6 @@ export default {
         this.bus.$on('drawBase', this.drawBase)
     },
     updated: function () {
-        console.log(1)
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.drawBase();
     },

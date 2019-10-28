@@ -150,54 +150,7 @@
                                     <hr />
                                 </div>
                                 <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <div class="row totalPower-data" style="border: 0;">
-                                        <div class="col-lg-4 col-4 totalPower-field">
-                                            <span>每週用電</span>
-                                        </div>
-                                        <div class="col-lg-8 col-8">
-                                            <div class="progress-container">
-                                                <div class="progress-bar-blue" style="width: 40%">
-                                                    <span>1.2kWh</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row totalPower-data">
-                                        <div class="col-lg-4 col-4 totalPower-field">
-                                            <span>本月用電</span>
-                                        </div>
-                                        <div class="col-lg-8 col-8">
-                                            <div class="progress-container">
-                                                <div class="progress-bar-green" style="width: 50%">
-                                                    <span>1.5kWh</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row totalPower-data">
-                                        <div class="col-lg-4 col-4 totalPower-field">
-                                            <span>本季用電</span>
-                                        </div>
-                                        <div class="col-lg-8 col-8">
-                                            <div class="progress-container">
-                                                <div class="progress-bar-blue-green" style="width: 70%">
-                                                    <span>1.9kWh</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row totalPower-data">
-                                        <div class="col-lg-4 col-4 totalPower-field">
-                                            <span>累積用電</span>
-                                        </div>
-                                        <div class="col-lg-8 col-8">
-                                            <div class="progress-container">
-                                                <div class="progress-bar-light-blue" style="width: 80%">
-                                                    <span>2.2kWh</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <totalPower :data="totalPower.data"></totalPower>
                                 </div>
                             </div>
                         </div>
@@ -214,26 +167,7 @@
                                     <hr />
                                 </div>
                                 <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <div class="cellContent">
-                                        <div id="collapseMW" class="collapse show">
-                                            <div class="blockMW">
-                                                <div class="blockMW__title">
-                                                    <div class="BG-color_blue">NXV 1020 A</div>
-                                                </div>
-                                                <div class="blockMW__content color_blue">
-                                                    <div>WDR604-A01-P001-1</div>
-                                                </div>
-                                            </div>
-                                            <div class="blockMW">
-                                                <div class="blockMW__title">
-                                                    <div class="BG-color_green">NXV 600 A</div>
-                                                </div>
-                                                <div class="blockMW__content color_green">
-                                                    <div>WDR604-A01-P001-2</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <blockMW :data="blockMW.data"></blockMW>
                                 </div>
                             </div>
                         </div>
@@ -269,19 +203,7 @@
                                     <hr />
                                 </div>
                                 <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <div class="h-lg-100 resultAnalysis-item">
-                                        <div class="resultAnalysis-items">
-                                            <div class="resultAnalysis-name"></div>
-                                            <hr />
-                                            <div class="resultAnalysis-number"></div>
-                                        </div>
-                                        <div class="resultAnalysis-items">
-                                            <div class="resultAnalysis-name"></div>
-                                            <hr />
-                                            <div class="resultAnalysis-number"></div>
-                                        </div>
-                                    </div>
-                                    <div id="resultAnalysis-content" class="resultAnalysis-chart"></div>
+                                    <resultAnalysis :data="resultAnalysis.data"></resultAnalysis>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +211,7 @@
                 </div>
             </div>
         </div>
-        <Footer style="z-index:100;" :scrollToTag="scrollToTag" :system="system" :orderTable="orderTable" :nowPowerChart="nowPowerChart" :totalPower="totalPower" :blockMW="blockMW"
+        <Footer :scrollToTag="scrollToTag" :system="system" :orderTable="orderTable" :nowPowerChart="nowPowerChart" :totalPower="totalPower" :blockMW="blockMW"
             :machineUtilizationRate="machineUtilizationRate" :resultAnalysis="resultAnalysis"></Footer>
     </div>
 </template>
@@ -298,10 +220,13 @@
 import Vue from 'vue'
 import gauge from './gauge/gauge.vue'
 import circleAnalysis from './circleAnalysis/circleAnalysis.vue'
+import resultAnalysis from './resultAnalysis/resultAnalysis.vue'
+import totalPower from './totalPower/totalPower.vue'
+import blockMW from './blockMW/blockMW.vue'
 
 export default {
     name: "home",
-    components: { gauge, circleAnalysis },
+    components: { gauge, circleAnalysis, resultAnalysis, totalPower, blockMW },
     data() {
         return {
             bus: new Vue(),
@@ -403,11 +328,30 @@ export default {
             },
             totalPower: {
                 name: "totalPower-header",
-                flag: true
+                flag: true,
+                data: {
+                    allEnergy: 5,
+                    weekEnergy: 1.2,
+                    monthEnergy: 1.9,
+                    seasonEnergy: 2.2,
+                    accumulatedEnergy: 4
+                }
             },
             blockMW: {
                 name: "blockMW-header",
-                flag: true
+                flag: true,
+                data: [
+                    {
+                        name: "NXV 1020 A",
+                        value: "WDR604-A01-P001-1",
+                        class: "color_blue"
+                    },
+                    {
+                        name: "NXV 600 A",
+                        value: "WDR604-A01-P001-2",
+                        class: "color_green"
+                    }
+                ]
             },
             machineUtilizationRate: {
                 name: "machineUtilizationRate-header",
@@ -430,19 +374,23 @@ export default {
             },
             resultAnalysis: {
                 name: "resultAnalysis-header",
-                flag: true
+                flag: true,
+                data: {
+                    "id": "resultAnalysisChart",
+                    "obj": [{
+                        name: 'NXV1020A',
+                        y: 70,
+                        value: 100,
+                    }, {
+                        name: 'NXV600A',
+                        y: 30,
+                        value: 100,
+                    }]
+                }
             }
         }
     },
-    created() {
-        document.addEventListener("resize", this.windowSizeChange);
-    },
-    destroyed() {
-        document.removeEventListener("resize", this.windowSizeChange);
-    },
     mounted() {
-        import("./js/resultAnalysis.js");
-
         if (window.innerWidth < 992) {
             setTimeout(() => {
                 this.$set(this.orderTable, 'flag', false);
@@ -452,6 +400,7 @@ export default {
                 this.$set(this.machineUtilizationRate, 'flag', false);
                 this.$set(this.resultAnalysis, 'flag', false);
             }, 500);
+            document.getElementById("footer").style.display = "none";
         }
         window.onresize = () => {
             setTimeout(() => {

@@ -2,7 +2,7 @@
   <div class="home">
     <Header></Header>
     <router-view :tweetData=loadData></router-view>
-    <Footer></Footer> 
+    <Footer id="footer"></Footer> 
     
   </div>
 </template>

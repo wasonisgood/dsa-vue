@@ -12,7 +12,6 @@
 </template>
 <script>
 import "../../../assets/assets/js/gauge.min.js";
-import "../../../assets/assets/js/highcharts.js";
 export default {
     name: "nowPower",
     props: {
@@ -71,8 +70,8 @@ export default {
 </script>
 <style>
 .nowPower-main {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .nowPower-Value {
