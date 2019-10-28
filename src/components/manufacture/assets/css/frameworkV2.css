@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+  font-weight: 900;
+}
+
+.bar {
+  width: 100vw;
+  height: 8rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#bcc6da), color-stop(#245b91), to(#172846));
+  background-image: linear-gradient(to right, #bcc6da, #245b91, #172846);
+  color: white;
+}
+
+li {
+  text-align: center;
+  width: 4rem;
+}
+
+.navbar-nav a{
+	color:#fff !important; 
+}
+
+#navMiddle-container{
+  padding-top: 1rem;
+  margin-left: 10vw;
+}
+.navbar-custom-menu{
+  padding-top: .5rem;
+}
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navMiddle {
+  width: calc( 60vw / 6);
+  line-height: 30px;
+}
+
+.navright {
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  width: 100vw;
+  height: 3rem;
+  background-color: #181f31;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+footer .chineseCompanyName {
+  font-size: 15px;
+  font-family: "微軟正黑體",sans-serif;
+}
+
+footer .engCompanyName {
+  font-size: 12px;
+  font-family: 'Russo One', sans-serif;
+}
+
+footer .footerSpan {
+  font-size: 9px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.logo {
+  width: auto;
+  height: 5rem;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .navMiddle {
+    margin: 15px;
+  }
+  .navright {
+    margin: 15px;
+  }
+  .logo {
+    width: 90px !important;
+    height: 50px  !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 75px !important;
+    height: 40px  !important;
+  }
+}
+
+.icon {
+  width: auto;
+  height: 2.5rem;
+}
+.material-icons{
+  font-size: 2rem;
+  color: #fff;
+}
+.badge-success{
+  background-color: #FFF;
+  color: #162947 !important;
+}
+.navbar-custom-menu .icon{
+  height: 1.75rem;
+}
+.avatar{
+  height: 2.25rem;
+  width: 2.25rem;
+}
+.envelope {
+  width: 24px;
+  height: 24px;
+}
+
+#time {
+  margin-left: 80px;
+}
+
+.co {
+  margin-right: 80px;
+}
+/*# sourceMappingURL=frameworkV2.css.map */

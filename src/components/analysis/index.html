@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="./assets/js/popper.min.js"></script>
+	<!-- header css -->
+	<link rel="stylesheet" href="assets/css/all.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/frameworkV2.css">
+	<!-- Bootstrap CDN -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<!-- D3.js CDN -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<!-- HighChart CDN -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<!-- main css -->
+	<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+	<!-- Header - computer ver. layout -->
+	<div class="sticky d-none d-lg-block"> 
+		<nav class="navbar navbar-dark navbar-expand d-flex justify-content-between bd-navbar bar shadow">	
+			<div class="relative">
+				<div>
+					<img class="logo" src="assets/img/LOGO.png" alt="brand">
+				</div>
+			</div>
+			<div  id="navMiddle-container" class="mr-4">
+				<ul class="navbar-nav d-flex justify-content-between">
+					<li class="nav-item navMiddle">
+						<a href="../home/index.html"><img src="assets/img/icon-05.png" class="icon" alt=""></a><br>
+						<a href="../home/index.html"><span>系統首頁</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../machine/index.html"><img src="assets/img/icon-04.png" class="icon" alt=""></a><br>
+						<a href="../machine/index.html"><span>設備狀態</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../sysanalyze/index.html"><img src="assets/img/icon-02.png" class="icon" alt=""><br></a>
+						<a href="../sysanalyze/index.html"><span>智能分析</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../manufacture/manufacture/power_analysis.html"><img src="assets/img/icon-03.png" class="icon" alt=""><br></a>
+						<a href="../manufacture/manufacture/power_analysis.html"><span>生產管理</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../break/#/malfunction/"><img src="assets/img/icon-06.png" class="icon" alt=""></a><br>
+						<a href="../break/#/malfunction/"><span>故障管理</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../tool-info/index.html"><img src="assets/img/icon-07.png" class="icon" alt=""></a><br>
+						<a href="../tool-info/index.html"><span>刀具管理</span></a>
+					</li>
+				</ul>
+			</div>
+			<!--Top Menu Start -->
+			<div class="navbar-custom-menu">
+				<ul class="nav navbar-nav d-flex align-items-center">
+					<!-- Messages-->
+					<li>
+						<a href="#">
+							<img src="assets/img/icon-08.png" class="icon" alt="">
+							<span class="badge badge-success badge-mini rounded-circle">4</span>
+						</a>
+					</li>
+					<li>
+						<figure class="avatar">
+							<img class="userIcon" src="assets/img/dummy/face.png" alt="">
+							<span class="avatar-badge online"></span>
+						</figure>
+					</li>
+					<li style="width: auto;">
+						<span>USER</span>
+					</li>
+					<!-- User Account-->
+					<li style="width: 1rem;">
+						<a href="#" class="nav-link" data-toggle="dropdown">
+							<i class="material-icons">keyboard_arrow_down</i>
+						</a>
+					</li>
+					<li class="dropdown custom-dropdown user user-menu ">
+						<div class="dropdown-menu p-4 dropdown-menu-right">
+							<div class="row box justify-content-between my-4">
+								<div class="col">
+									<a href="#">
+										<i class="icon-apps purple lighten-2 avatar  r-5"></i>
+										<div class="pt-1">Apps</div>
+									</a>
+								</div>
+								<div class="col">
+									<a href="#">
+										<i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
+										<div class="pt-1">Profile</div>
+									</a>
+								</div>
+								<div class="col">
+									<a href="#">
+										<i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
+										<div class="pt-1">Settings</div>
+									</a>
+								</div>
+							</div>
+							<div class="row box justify-content-between my-4">
+								<div class="col">
+									<a href="#">
+										<i class="icon-star light-green lighten-1 avatar  r-5"></i>
+										<div class="pt-1">Favourites</div>
+									</a>
+								</div>
+								<div class="col">
+									<a href="#">
+										<i class="icon-save2 orange accent-1 avatar  r-5"></i>
+										<div class="pt-1">Saved</div>
+									</a>
+								</div>
+								<div class="col">
+									<a href="#">
+										<i class="icon-perm_data_setting grey darken-3 avatar  r-5"></i>
+										<div class="pt-1">Settings</div>
+									</a>
+								</div>
+							</div>
+							<hr>
+							<div class="row box justify-content-between my-4">
+								<div class="col">
+									<a href="#">
+										<i class="icon-apps purple lighten-2 avatar  r-5"></i>
+										<div class="pt-1">Apps</div>
+									</a>
+								</div>
+								<div class="col">
+									<a href="#">
+										<i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
+										<div class="pt-1">Profile</div>
+									</a>
+								</div>
+								<div class="col">
+									<a href="#">
+										<i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
+										<div class="pt-1">Settings</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- header - mobile device ver. layout -->
+	<div class="sticky d-block d-lg-none">
+		<nav class="navbar navbar-dark navbar-expand-lg d-flex flex-column align-items-center bd-navbar bar shadow ">	
+			<div class="d-flex justify-content-between w-100 order-1">
+				<img class="logo" src="assets/img/LOGO.png" alt="brand">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseToggler" aria-controls="collapseToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon "></span>
+				</button>
+			</div>
+			<div  id="collapseToggler" class="collapse navbar-collapse order-2" >
+				<ul class="navbar-nav d-flex flex-row justify-content-between">
+					<li class="nav-item navMiddle">
+						<a href="../home/index.html"><img src="assets/img/icon-05.png" class="icon" alt=""></a><br>
+						<a href="../home/index.html"><span>系統首頁</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../machine/index.html"><img src="assets/img/icon-04.png" class="icon" alt=""></a><br>
+						<a href="../machine/index.html"><span>設備狀態</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../sysanalyze/index.html"><img src="assets/img/icon-02.png" class="icon" alt=""><br></a>
+						<a href="../sysanalyze/index.html"><span>智能分析</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../manufacture/manufacture/failure_analysis.html"><img src="assets/img/icon-03.png" class="icon" alt=""><br></a>
+						<a href="../manufacture/manufacture/failure_analysis.html"><span>生產管理</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../break/#/malfunction/"><img src="assets/img/icon-06.png" class="icon" alt=""></a><br>
+						<a href="../break/#/malfunction/"><span>故障管理</span></a>
+					</li>
+					<li class="nav-item navMiddle">
+						<a href="../tool-info/index.html"><img src="assets/img/icon-07.png" class="icon" alt=""></a><br>
+						<a href="../tool-info/index.html"><span>刀具管理</span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<!-- body -->
+	<!-- computer layout -->
+	<div class="background-primary d-none d-lg-block w-100" style="height: 79vh; width:100vw;">
+		<div class="d-flex justify-content-between spindleChart">
+			<!-- 主軸轉速 -->
+			<div class="spindleChart-div h-100">
+				<div class="background-white h-100">
+					<div class="subtitleDiv d-flex justify-content-between text-style-2" id="speedChartTitle">
+						<div class="align-self-center d-flex">
+							<img class="align-self-center mr-3" src="icon/icon2.png" height="23" width="23" />
+							<span class="subtitle align-self-center text-style-2">主軸轉速</span>
+						</div>
+						<!-- <select id="opts" class="align-self-center chartselect" onchange="chartChange()"> -->
+							<!-- <option value="1020A">NXV1020A</option> -->
+							<!-- <option value="600A" >NXV600A</option> -->
+						<!-- </select> -->
+					</div>
+					<!-- 折線圖 - linechart-speed.js -->
+					<div class="lineChartDiv text-style-1" id="speedChart"></div>
+				</div>
+			</div>
+			<!-- 主軸扭力 -->
+			<div class="spindleChart-div h-100">
+				<div class="background-white h-100">
+					<div class="subtitleDiv d-flex justify-content-between text-style-2" id="torqueChartTitle">
+						<div class="align-self-center d-flex">
+							<img class="align-self-center mr-3" src="icon/icon3.png" height="23" width="23" />
+							<span class="subtitle align-self-center text-style-2">主軸扭力</span>
+						</div>
+						<!-- <select class="align-self-center chartselect" onchange=""> -->
+							<!-- <option value="1020A">NXV1020A</option> -->
+							<!-- <option value="600A" >NXV600A</option> -->
+						<!-- </select> -->
+					</div>
+					<!-- 折線圖 - linechart-torque.js -->
+					<div class="lineChartDiv text-style-1" id="torqueChart"></div>
+				</div>
+			</div>
+			<!-- 主軸震動 -->
+			<div class="spindleChart-div h-100">
+				<div class="background-white h-100">
+					<div class="subtitleDiv d-flex justify-content-between text-style-2" id="vibrationChartTitle">
+						<div class="align-self-center d-flex">
+							<img class="align-self-center mr-3" src="icon/icon4.png" height="23" width="23" />
+							<span class="subtitle align-self-center text-style-2">主軸震動</span>
+						</div>
+						<!-- <select class="align-self-center chartselect" onchange=""> -->
+							<!-- <option value="1020A">NXV1020A</option> -->
+							<!-- <option value="600A" >NXV600A</option> -->
+						<!-- </select> -->
+					</div>
+					<!-- 折線圖 - linechart-vibration.js -->
+					<div class="lineChartDiv text-style-1" id="vibrationChart"></div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between similarity">
+			<!-- NXV1020A 相似度 -->
+			<div class="similarity-div h-100">
+				<div class="background-white h-100">
+					<div class="subtitleDiv d-flex">
+						<img src="icon/icon1.png" height="20" width="20" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">NXV1020A 加工相似度</span>
+					</div>
+					<!-- 圓餅圖 - ringchart-NXV1020A.js -->
+					<div class="ringChartDiv" id="NXV1020AChart">
+					</div>
+					<!-- 診斷 -->
+					<form class="container diagnosisForm background-primary">
+						<div class="d-flex mt-1 ml-1" style="height: 15%;">
+							<span class="col-form-label text-left text-nowrap align-self-center text-style-1">診斷結果 :</span>
+							<input class="h-auto text-center align-self-center text-style-1" type="text" value="正常" readonly> </input>
+						</div>
+						<div class="d-flex h-75 ml-1">
+							<span class="col-form-label text-left text-nowrap align-self-start text-style-1">診斷說明 :</span>
+							<textarea class="h-100 align-self-center mt-2 text-style-1" readonly></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- NXV600A 相似度 -->
+			<div class="similarity-div h-100">
+				<div class="background-white h-100">
+					<div class="subtitleDiv d-flex">
+						<img src="icon/icon1.png" height="20" width="20" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">NXV600A 加工相似度</span>
+					</div>
+					<!-- 圓餅圖 - ringchart-NXV600A.js-->
+					<div class="ringChartDiv" id="NXV600AChart">
+					</div>
+					<!-- 診斷 -->
+					<form class="container diagnosisForm background-primary">
+						<div class="d-flex mt-1 ml-1" style="height: 15%;">
+							<span class="col-form-label text-left text-nowrap align-self-center text-style-1">診斷結果 :</span>
+							<input class="h-auto text-center align-self-center text-style-1" type="text" value="正常" readonly> </input>
+						</div>
+						<div class="d-flex h-75 ml-1">
+							<span class="col-form-label text-left text-nowrap align-self-start text-style-1">診斷說明 :</span>
+							<textarea class="h-100 align-self-center mt-2 text-style-1" readonly></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Mobile Device Layout -->
+	<div class="container-fluid background-primary d-block d-lg-none" style="padding-bottom: 20vh;">
+		<div class="row">
+			<!-- 主軸轉速 -->
+			<div class="col">
+				<div class="card background-white mt-3 mb-3">
+					<div id="collapse-link-1" class="card-header background-white d-flex">
+						<img src="icon/icon2.png" height="23" width="23" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">主軸轉速</span>
+					</div>
+					<div class="card-body" id="collapse-target-1" style="display: none;">
+						<div class="lineChartDiv text-style-1" id="speedChart-mobile" style="height:65vh;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- 主軸扭力 -->
+			<div class="col">
+				<div class="card background-white mt-3 mb-3">
+					<div id="collapse-link-2" class="card-header background-white d-flex">
+						<img src="icon/icon3.png" height="23" width="23" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">主軸扭力</span>
+					</div>
+					<div class="card-body" id="collapse-target-2" style="display: none;">
+						<div class="lineChartDiv text-style-1" id="torqueChart-mobile" style="height:65vh;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- 主軸震動 -->
+			<div class="col">
+				<div class="card background-white mt-3 mb-3">
+					<div id="collapse-link-3" class="card-header background-white d-flex">
+						<img src="icon/icon4.png" height="23" width="23" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">主軸震動</span>
+					</div>
+					<div class="card-body" id="collapse-target-3" style="display: none;">
+						<div class="lineChartDiv text-style-1" id="vibrationChart-mobile" style="height:65vh;"></div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="row">
+			<!-- NXV1020A 相似度 -->
+			<div class="col">
+				<div class="card background-white mt-3 mb-3">
+					<div id="collapse-link-4" class="card-header background-white d-flex">
+						<img src="icon/icon1.png" height="20" width="20" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">NXV1020A 加工相似度</span>
+					</div>
+					<div class="card-body p-3" id="collapse-target-4" style="display: none; padding:0;">
+						<div class="ringChartDiv-mobile" id="NXV1020AChart-mobile"></div>
+						<div class="diagnosisResult-mobile">
+							<span>診斷結果 : </span>
+							<input type="text" value="正常" readonly></input>
+						</div>
+						<div class="diagnosisDescribe-mobile">
+							<span>診斷說明 : </span><br>
+							<textarea class="" readonly></textarea>
+						</div>
+					</div>
+				</div>						
+			</div>
+		</div>
+		<div class="row">
+			<!-- NXV600A 相似度 -->
+			<div class="col">
+				<div class="card background-white mt-3 mb-3">
+					<div id="collapse-link-5" class="card-header background-white d-flex">
+						<img src="icon/icon1.png" height="20" width="20" class="align-self-center mr-3"/><span class="subtitle text-style-2 align-self-center">NXV600A 加工相似度</span>
+					</div>
+					<div class="card-body p-3" id="collapse-target-5" style="display: none; padding:0;">
+						<div class="ringChartDiv-mobile" id="NXV600AChart-mobile"></div>
+						<div class="diagnosisResult-mobile">
+							<span>診斷結果 : </span>
+							<input type="text" value="正常" readonly></input>
+						</div>
+						<div class="diagnosisDescribe-mobile">
+							<span>診斷說明 : </span><br>
+							<textarea class="" readonly></textarea>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	<!-- body -->
+	
+	<!-- footer -->
+	<!-- navigator for mobile device version -->
+	<div class="bottom-navbar d-flex justify-content-between background-white d-block d-lg-none">
+		<a class="bottom-navitem d-flex flex-column" id="navitem-1">
+			<img src="icon/icon2.png" height="20" width="20" class="align-self-center mt-3"/>
+			<span class="align-self-center">主軸轉速</span>
+		</a>
+		<a class="bottom-navitem d-flex flex-column" id="navitem-2">
+			<img src="icon/icon2.png" height="20" width="20" class="align-self-center mt-3"/>
+			<span class="align-self-center">主軸扭力</span>
+		</a>
+		<a class="bottom-navitem d-flex flex-column" id="navitem-3">
+			<img src="icon/icon2.png" height="20" width="20" class="align-self-center mt-3"/>
+			<span class="align-self-center">主軸震動</span>
+		</a>
+		<a class="bottom-navitem d-flex flex-column" id="navitem-4">
+			<img src="icon/icon1.png" height="20" width="20" class="align-self-center mt-3"/>
+			<span class="align-self-center">NXV1020A</span>
+		</a>
+		<a class="bottom-navitem d-flex flex-column" id="navitem-5">
+			<img src="icon/icon1.png" height="20" width="20" class="align-self-center mt-3"/>
+			<span class="align-self-center">NXV600A</span>
+		</a>
+	</div>
+	<!-- footer for computer ver. -->
+	<div class="d-none d-lg-block">
+		<footer class="d-flex align-items-center justify-content-between">
+			<div id="time"></div>
+			<div class="co"><span class="chineseCompanyName"> 達詳自動化股份有限公司</span>&nbsp;&nbsp; <span class="engCompanyName">DA&nbsp;SHIANG&nbsp;AUTOMATION</span>&nbsp;<span class="footerSpan">CO.LTD</span></div>
+		</footer>
+	</div>
+	
+	<script src="assets/js/nowDate.js"></script>
+	<!-- 折線圖 + 標題和底部導覽列點擊觸發圖表展開與收合(手機排版) -->
+	<script type="text/javascript" src="linechart.js"></script>
+	<!-- 圓餅圖 -->
+	<script type="text/javascript" src="ringchart.js"></script>
+</body>
+
+</html>

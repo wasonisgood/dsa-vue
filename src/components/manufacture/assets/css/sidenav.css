@@ -1,0 +1,131 @@
+body {
+  background-color: white;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 3vh;
+}
+
+.sidenav .under {
+  padding: 0 0 15px 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(128, 128, 128, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidenav .under div {
+  font-size: 12px;
+}
+
+.sidenav .under:hover {
+  width: 80vw;
+  height: 9vh;
+  margin: auto;
+}
+
+.sidenav .under .dropdown-menu {
+  min-width: 15rem;
+  min-height: 10rem;
+}
+
+.sidenav a {
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: rgba(128, 128, 128, 0.7);
+}
+
+.preserved25 {
+  height: 25vh;
+}
+
+.preserved75 {
+  height: 75vh;
+}
+
+.cent {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #343a40;
+  border-radius: 5px;
+}
+
+.leftsideGauge {
+  border-radius: 5px;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.bgpattern {
+  display: inline-block;
+  background-color: #343a40;
+  width: 33%;
+  height: 20px;
+  border-radius: 5px;
+  margin: 0 1px;
+}
+
+.leftborder {
+  display: inline-block;
+  background-color: green;
+  width: 33%;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.disp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sidepointer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=sidenav.css.map */

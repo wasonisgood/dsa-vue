@@ -1,0 +1,87 @@
+* {
+  font-family: 'Francois One', sans-serif;
+}
+
+.hAll {
+  height: 100vh;
+}
+
+.leftDiv {
+  height: 30vh;
+  margin: 10px 10px 10px 30px;
+  font-size: 45px;
+}
+
+.leftDiv p {
+  color: rgba(128, 128, 128, 0.7);
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+.firstLeftDiv {
+  background-color: rgba(52, 58, 64, 0.5);
+  margin: 10px;
+  height: 100%;
+}
+
+.secondLeftDiv, .thirdLeftDiv {
+  background-color: #7d7d7d;
+  color: #820912;
+  height: 100%;
+}
+
+.flexCenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.btnG {
+  background-color: #72a467;
+  color: white;
+  width: 40%;
+  height: 80px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.btnR {
+  background-color: #812e28;
+  color: white;
+  width: 40%;
+  height: 80px;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.perserved25 {
+  height: 25vh;
+  background-color: #2d3e48;
+  margin: 20px;
+}
+
+.perserved25 div {
+  font-size: 45px;
+}
+
+.perserved75 {
+  height: 75vh;
+  background-color: #2d3e48;
+  margin: 20px;
+}
+
+.perserved75 li {
+  font-size: 25px;
+}
+
+.rightDiv {
+  border-radius: 2px;
+  color: white;
+}
+/*# sourceMappingURL=errorPage1.css.map */

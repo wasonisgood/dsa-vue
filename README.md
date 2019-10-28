@@ -1,41 +1,29 @@
 # 2019workshop
 
-## 如要安裝項目依賴
+## Project setup
 ```
 npm install
 ```
 
-### 使用線上熱修復（web)
+### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### 產出編譯web，請放至雲端硬碟dsa-vue資料夾裡，並加上當天日期，如遇重複請加上流水號，以區別之
+### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### web語法測試
+### Run your tests
 ```
 npm run test
 ```
 
-### 修正相依性
+### Lints and fixes files
 ```
 npm run lint
 ```
-### 編譯當前平台版本應用程式，取setup.exe放置dsa-vue
-```
-npm run electron:build
-```
 
-## 分支管理
-### Feature一類
-#### 以功能區分的個人topic
-#### 命名
-```
-fe-功能（頁面）--github username
-```
-
-
-
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

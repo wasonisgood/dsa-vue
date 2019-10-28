@@ -1,0 +1,48 @@
+.blockMW{
+    position: relative;
+    height: 80px;
+    max-width: 215px;
+    margin: auto;
+  }
+  .blockMW__title{
+    position: absolute;
+    width: 65%;
+  }
+  .blockMW__title>div{
+    font-size: 12px;
+    padding-left: 20px;
+    height: 32px;
+    font-weight: 700;
+    color:#FFF;
+    clip-path: polygon(11px 0, calc(100% - 1px) 0, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0 50%);/* chrome(webkit) 的參數才可調用calc*/
+    -webkit-clip-path: polygon(11px 0, calc(100% - 11px) 0, 100% 50%, calc(100% - 11px) 100%, 11px 100%, 0 50%);
+  }
+  .blockMW__content{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 16px;
+    left: 2px;
+    filter: drop-shadow(1px 4px 6px rgba(50, 50, 0, 0.3));/*陰影無法與clip-path共存，故包在外層div*/
+  } 
+  .blockMW__content>div{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px;
+    background-color: #FFF;
+    clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%);/* chrome(webkit) 的參數才可調用calc*/
+    -webkit-clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%);
+  }
+
+  .BG-color_blue{
+    background-color: #8092b9;
+  }
+  .color_blue{
+    color: #8092b9;
+  }
+  .BG-color_green{
+    background-color: #19b0c6;
+  }
+  .color_green{
+    color: #19b0c6;
+  }

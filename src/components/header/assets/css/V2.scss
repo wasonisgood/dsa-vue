@@ -1,0 +1,228 @@
+body{
+    background-color: #fff;
+    font-size: 20px;
+}
+
+img{
+    width: 70%;
+}
+
+.preserved10 {
+    height: 10vh;
+}
+
+.preserved90 {
+    margin-top: 15px;
+    height: 90vh;
+    background-image: url("../img/09.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.data{
+    color: #cda932;
+}
+
+.graybg{
+    background-color: #878286;
+    border-radius: 15px;
+    color: white;
+}
+
+.greenBtn {
+    background-color: green;
+    padding: 10px;
+    line-height: 5px;
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.yellowBtn{
+    background-color: #eaab2c;
+    padding: 10px;
+    line-height: 5px;
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.redBtn{
+    background-color: red;
+    padding: 10px;
+    line-height: 5px;
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.borderL{
+    border-left: 3px solid #818181;
+}
+
+.disp{
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.marginL{
+    margin-left: 0px;
+}
+
+.leftBottom{
+    position: absolute;
+    left: 5vw;
+    bottom: 1vh;
+    width: 300px;
+    height: 300px;
+}
+
+.rightBottom{
+    position: absolute;
+    right: 5vw;
+    bottom: 10vw;
+    width: 400px;
+    height: 300px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+}
+
+#myBar1 {
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to right, #659dc0 ,  #6db2d9);
+    text-align: right; 
+    line-height: 20px; /* To center it vertically */
+    color: white;
+    margin-top: 10px;
+}
+
+#myBar2 {
+    width: 45%;
+    height: 20px;
+    background-image: linear-gradient(to right, #67a49c ,  #72bab1);
+    text-align: right;
+    line-height: 20px; /* To center it vertically */
+    color: white; 
+    margin-top: 10px;
+}
+
+#myBar3 {
+    width: 60%;
+    height: 20px;
+    background-image: linear-gradient(to right, #bc9643 ,  #e6bb6c);
+    text-align: right; 
+    line-height: 20px; /* To center it vertically */
+    color: white; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span{
+    margin:0 5px;
+}
+
+.Doughnut{
+    position: absolute;
+    left: 5vw;
+    bottom: 22vh;
+    width: 300px;
+    height: 300px;
+}
+
+.barWidth{
+        width: 80px;
+        background-color: #3d525e;
+        border-radius: 5px;
+        margin: 0 5px;
+}
+
+.bar{
+    width: 20%;
+    height: 10px;
+    background-color: #6db2d9;
+    border-radius: 5px 0 0 5px;
+}
+
+
+.str p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1382px) {
+    .leftBottom{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .rightBottom{
+        width: 350px;
+        height: 250px;
+    }
+
+    .Doughnut{
+        left: 3vw;
+        bottom: 20vh;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .leftBottom{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .rightBottom{
+        width: 300px;
+        height: 200px;
+    }
+
+    .Doughnut{
+        left: 1vw;
+        bottom: 15vh;
+    }
+
+    .str p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .leftBottom{
+        bottom: 18vh;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .rightBottom{
+        width: 250px;
+        height: 150px;
+    }
+
+    .Doughnut{
+        width: 250px;
+        height: 250px;
+        bottom: 22vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .preserved10{
+        height: 30vh;
+    }
+
+    .preserved90{
+        height: 70vh;
+    }
+
+    img{
+        width: 30%;
+    }
+}
