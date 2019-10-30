@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" value="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/frameworkV2.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/icon.css">
+
+</head>
+
+<body>
+    <div class="sticky d-none d-lg-block">
+        <nav class="navbar navbar-dark navbar-expand d-flex justify-content-between bd-navbar bar shadow">
+            <div class="relative">
+                <div>
+                    <img class="logo" src="img/LOGO.png" alt="brand">
+                </div>
+            </div>
+            <div id="navMiddle-container" class="mr-4">
+                <ul class="navbar-nav d-flex justify-content-between">
+                    <li class="nav-item navMiddle">
+                        <a href="#"><img src="img/icon-05.png" class="icon" alt=""></a><br>
+                        <a href="#"><span>系統首頁</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../machine/index.html"><img src="img/icon-04.png" class="icon" alt=""></a><br>
+                        <a href="../machine/index.html"><span>設備狀態</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../sysanalyze/index.html"><img src="img/icon-02.png" class="icon" alt=""><br></a>
+                        <a href="../sysanalyze/index.html"><span>智能分析</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../manufacture/manufacture/power_analysis.html"><img src="img/icon-03.png" class="icon" alt=""><br></a>
+                        <a href="../manufacture/manufacture/power_analysis.html"><span>生產管理</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="#"><img src="img/icon-06.png" class="icon" alt=""></a><br>
+                        <a href="#"><span>故障管理</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../tool-info/index.html"><img src="img/icon-07.png" class="icon" alt=""></a><br>
+                        <a href="../tool-info/index.html"><span>刀具分析</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!--Top Menu Start -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav d-flex align-items-center">
+                    <!-- Messages-->
+                    <li>
+                        <a href="#">
+                            <img src="img/icon-08.png" class="icon" alt="">
+                            <span class="badge badge-success badge-mini rounded-circle">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <figure class="avatar">
+                            <img class="userIcon" src="img/member.png" alt="">
+                        </figure>
+                    </li>
+                    <li>
+                        <span style="font-size: 1.1rem">USER</span>
+                    </li>
+                    <!-- User Account-->
+                    <li>
+                        <a href="#" class="nav-link" data-toggle="dropdown">
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </a>
+                    </li>
+                    <li class="dropdown custom-dropdown user user-menu ">
+                        <div class="dropdown-menu p-4 dropdown-menu-right">
+                            <div class="row box justify-content-between my-4">
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-apps purple lighten-2 avatar  r-5"></i>
+                                        <div class="pt-1">Apps</div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
+                                        <div class="pt-1">Profile</div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
+                                        <div class="pt-1">Settings</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row box justify-content-between my-4">
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-star light-green lighten-1 avatar  r-5"></i>
+                                        <div class="pt-1">Favourites</div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-save2 orange accent-1 avatar  r-5"></i>
+                                        <div class="pt-1">Saved</div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-perm_data_setting grey darken-3 avatar  r-5"></i>
+                                        <div class="pt-1">Settings</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row box justify-content-between my-4">
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-apps purple lighten-2 avatar  r-5"></i>
+                                        <div class="pt-1">Apps</div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
+                                        <div class="pt-1">Profile</div>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#">
+                                        <i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
+                                        <div class="pt-1">Settings</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- mobile device -->
+    <div class="sticky d-block d-lg-none">
+        <nav class="navbar navbar-dark navbar-expand-lg d-flex flex-column align-items-center bd-navbar bar shadow ">
+            <div class="d-flex justify-content-between w-100">
+                <img class="logo" src="img/LOGO.png" alt="brand">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseToggler"
+                    aria-controls="collapseToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+            <div id="collapseToggler" class="collapse navbar-collapse">
+                <ul class="navbar-nav d-flex justify-content-between">
+                    <li class="nav-item navMiddle">
+                        <a href="#"><img src="img/icon-05.png" class="icon" alt=""></a><br>
+                        <a href="#"><span>系統首頁</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../machine/index.html"><img src="img/icon-04.png" class="icon" alt=""></a><br>
+                        <a href="../machine/index.html"><span>設備狀態</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../sysanalyze/index.html"><img src="img/icon-02.png" class="icon" alt=""><br></a>
+                        <a href="../sysanalyze/index.html"><span>智能分析</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../manufacture/manufacture/power_analysis.html"><img src="img/icon-03.png" class="icon" alt=""><br></a>
+                        <a href="../manufacture/manufacture/power_analysis.html"><span>生產管理</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="#"><img src="img/icon-06.png" class="icon" alt=""></a><br>
+                        <a href="#"><span>故障管理</span></a>
+                    </li>
+                    <li class="nav-item navMiddle">
+                        <a href="../tool-info/index.html"><img src="img/icon-07.png" class="icon" alt=""></a><br>
+                        <a href="../tool-info/index.html"><span>刀具分析</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div style="width:100%;height:calc(100vh - 10rem); padding: 15px 0; overflow-x: hidden;">
+        <div class="container-fluidcontainer-on-phone">
+            <div class="row">
+                <div class="w-xl-60 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('system')">
+                            <span class="workTitle"><img class="mr-2" width="20" src="img/system-status.png">系統狀態</span>
+                            <span class="workTitle hide-on-phone" style="float: right;"><img class="mr-2" width="20"
+                                    src="img/Idle.png">Idle</span>
+                            <span class="workTitle hide-on-phone" style="float: right;"><img class="mr-2" width="20"
+                                    src="img/Error.png">Error</span>
+                            <span class="workTitle hide-on-phone" style="float: right;"><img class="mr-2" width="20"
+                                    src="img/Run.png">Run</span>
+                        </div>
+                        <div class="collapse show" id="system">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-50 w-xs-100">
+                                <div class="w-xl-50 w-xs-100 system-status">
+                                    <span class="system-title">CNC NXV1020A</span>
+                                    <img class="hide-on-phone" width="25" src="img/Error.png" />
+                                    <span class="hide-on-computer" style="float: right;"><img class="mr-2" width="20"
+                                            src="img/Error.png">Error</span>
+                                </div>
+                                <div class="w-xl-100 w-xs-100">
+                                    <img style="width: 80%;" src="img/BG.png" />
+                                </div>
+                            </div>
+                            <div class="w-xl-50 w-xs-100">
+                                <div class="w-xl-50 w-xs-100 system-status">
+                                    <span class="system-title">CNC NXV600A</span>
+                                    <img class="hide-on-phone" width="25" src="img/Run.png" />
+                                    <span class="hide-on-computer" style="float: right;"><img class="mr-2" width="20"
+                                            src="img/Run.png">Run</span>
+                                </div>
+                                <div class="w-xl-100 w-xs-100">
+                                    <img style="width: 80%;" src="img/BG.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-xl-40 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('orderTable')">
+                            <span class="workTitle"><img class="mr-2" width="20" src="img/icon_black.png">訂單資訊</span>
+                        </div>
+                        <div class="collapse show" id="orderTable">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-100 hide-on-phone">
+                                <div class="row table-header">
+                                    <div class="col-xl-2"> 訂單日期 </div>
+                                    <div class="col-xl-2"> 訂單編號 </div>
+                                    <div class="col-xl-2"> 案號 </div>
+                                    <div class="col-xl-2"> 交期 </div>
+                                    <div class="col-xl-2"> 完成日期 </div>
+                                    <div class="col-xl-2"> 交貨 </div>
+                                </div>
+                                <div class="table-value">
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c1" />
+                                            <label for="c1"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c2" />
+                                            <label for="c2"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c3" />
+                                            <label for="c3"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c4" />
+                                            <label for="c4"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;"> <input type="checkbox"
+                                                id="c5" />
+                                            <label for="c5"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c6" />
+                                            <label for="c6"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c7" />
+                                            <label for="c7"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c8" />
+                                            <label for="c8"><span></span></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 10808260001 </div>
+                                        <div class="col-xl-2"> WDR603 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2"> 2019/06/30 </div>
+                                        <div class="col-xl-2" style="padding-top: 5px;">
+                                            <input type="checkbox" id="c9" />
+                                            <label for="c9"><span></span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-xs-100 hide-on-computer phone-table">
+                                <div class="row table-header">
+                                    <div class="w-xs-20"> 訂單日期 </div>
+                                    <div class="w-xs-25"> 訂單編號 </div>
+                                    <div class="w-xs-15"> 案號 </div>
+                                    <div class="w-xs-20"> 交期 </div>
+                                    <div class="w-xs-20"> 完成日期 </div>
+                                </div>
+                                <div class="table-value finished">
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                </div>
+                                <div class="table-value unfinished">
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-25"> 10808260001 </div>
+                                        <div class="w-xs-15"> WDR603 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                        <div class="w-xs-20"> 2019/06/30 </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="w-xl-20 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('nowPowerChart')">
+                            <span class="workTitle"><img class="mr-2" width="20"
+                                    src="img/instant-power-consumption.png">系統即時用電量</span>
+                        </div>
+                        <div class="collapse show" id="nowPowerChart">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-100 w-xs-100">
+                                <div class="nowPower-panel">
+                                    <div class="now-Power-content">
+                                        <span id="nowPower-Value"></span>
+                                        <div class="innerContent">
+                                            <canvas id="nowPower"></canvas>
+                                        </div>
+                                        <span id="nowPower-min-Value">0</span>
+                                        <span id="nowPower-max-Value">2500(W)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-xl-20 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('totalPower')">
+                            <span class="workTitle"><img class="mr-2" width="20"
+                                    src="img/system-status.png">本月累計用電量</span>
+                        </div>
+                        <div class="collapse show" id="totalPower">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-100 w-xs-100">
+                                <div class="row totalPower-data" style="border: 0;">
+                                    <div class="col-xl-4 col-4 totalPower-field">
+                                        <span>每週用電</span>
+                                    </div>
+                                    <div class="col-xl-8 col-8">
+                                        <div class="progress">
+                                            <div class="progress-bar-blue" style="width: 40%"><span>1.2kWh</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row totalPower-data">
+                                    <div class="col-xl-4 col-4 totalPower-field">
+                                        <span>本月用電</span>
+                                    </div>
+                                    <div class="col-xl-8 col-8">
+                                        <div class="progress">
+                                            <div class="progress-bar-green" style="width: 50%"><span>1.5kWh</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row totalPower-data">
+                                    <div class="col-xl-4 col-4 totalPower-field">
+                                        <span>本季用電</span>
+                                    </div>
+                                    <div class="col-xl-8 col-8">
+                                        <div class="progress">
+                                            <div class="progress-bar-blue-green" style="width: 70%"><span>1.9kWh</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row totalPower-data">
+                                    <div class="col-xl-4 col-4 totalPower-field">
+                                        <span>累積用電</span>
+                                    </div>
+                                    <div class="col-xl-8 col-8">
+                                        <div class="progress">
+                                            <div class="progress-bar-light-blue" style="width: 80%"><span>2.2kWh</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-xl-20 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('blockMW')">
+                            <span class="workTitle"><img class="mr-2" width="20" src="img/tools.png">加工元件</span>
+                        </div>
+                        <div class="collapse show" id="blockMW">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-100 w-xs-100">
+                                <div class="cellContent">
+                                    <div id="collapseMW" class="collapse show">
+                                        <div class="blockMW mb-4">
+                                            <div class="blockMW__title ">
+                                                <div class="BG-color_blue">NXV 1020 A</div>
+                                            </div>
+                                            <div class="blockMW__content color_blue">
+                                                <div>WDR604-A01-P001-1</div>
+                                            </div>
+                                        </div>
+                                        <div class="blockMW">
+                                            <div class="blockMW__title ">
+                                                <div class="BG-color_green">NXV 600 A</div>
+                                            </div>
+                                            <div class="blockMW__content color_green">
+                                                <div>WDR604-A01-P001-2</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-xl-20 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('machineUtilizationRate')">
+                            <span class="workTitle"><img class="mr-2" width="20"
+                                    src="img/iconAchievedToday.png">機台嫁動率</span>
+                        </div>
+                        <div class="collapse show" id="machineUtilizationRate">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-100 w-xs-100">
+                                <div class="machine-content">
+                                    <canvas id="myCanvas"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-xl-20 w-xs-100 content">
+                    <div class="content-body">
+                        <div class="w-xl-100 w-xs-100 text-left" onclick="Toggle('resultAnalysis')">
+                            <span class="workTitle"><img class="mr-2" width="20"
+                                    src="img/output-status.png">本月產出狀況</span>
+                        </div>
+                        <div class="collapse show" id="resultAnalysis">
+                            <div class="w-xl-100 w-xs-100">
+                                <hr>
+                            </div>
+                            <div class="w-xl-100 w-xs-100">
+                                <div class="resultAnalysis-item">
+                                    <div class="resultAnalysis-items">
+                                        <div class="resultAnalysis-name"></div>
+                                        <hr>
+                                        <div class="resultAnalysis-number"></div>
+                                    </div>
+                                    <div class="resultAnalysis-items">
+                                        <div class="resultAnalysis-name"></div>
+                                        <hr>
+                                        <div class="resultAnalysis-number"></div>
+                                    </div>
+                                </div>
+                                <div id="resultAnalysis-content" class="resultAnalysis-chart">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-lg-block hide-on-phone">
+        <footer class="d-flex align-items-center justify-content-between" style="height: 62px; position: fixed;">
+            <div id="time"></div>
+            <div class="co"><span class="chineseCompanyName"> 達詳自動化股份有限公司</span>&nbsp;&nbsp; <span
+                    class="engCompanyName">DA&nbsp;SHIANG&nbsp;AUTOMATION</span>&nbsp;<span
+                    class="footerSpan">CO.LTD</span>
+            </div>
+        </footer>
+    </div>
+    <div class="hide-on-computer">
+        <footer class="d-flex align-items-center justify-content-between" style="height: 62px; position: fixed;">
+            <div class="text-center">
+                <span class="w-xs-100 chineseCompanyName footer-company">達詳自動化股份有限公司</span>
+                <div class="w-xs-100 footer-engcompany">
+                    <span class="engCompanyName">DA&nbsp;SHIANG&nbsp;AUTOMATION</span>&nbsp;<span
+                        class="footerSpan">CO.LTD</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/nowDate.js"></script>
+<script src="js/circleAnalysis.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-more.js"></script>
+<script src="js/gauge.min.js"></script>
+<script src="js/nowPower.js"></script>
+<script src="js/resultAnalysis.js"></script>
+<script>
+    function Toggle(toggleID) {
+        if (window.innerWidth < 576) {
+            $("#" + toggleID).collapse('toggle');
+        }
+    }
+    window.onload = function () {
+        if (window.innerWidth < 576) {
+            $("#orderTable").collapse('hide');
+            $("#nowPowerChart").collapse('hide');
+            $("#totalPower").collapse('hide');
+            $("#blockMW").collapse('hide');
+            $("#machineUtilizationRate").collapse('hide');
+            $("#resultAnalysis").collapse('hide');
+        }
+    };
+</script>
+
+</html>

@@ -1,0 +1,507 @@
+@media screen and (min-height: 1020){
+  .systemStatus-mid {
+    min-height: 560px;
+    height: calc(90vh - 5rem);
+    position: relative;
+  }
+  .systemStatus-panel, .healthAnalysis-panel,
+  .totalPower-panel, .resultAnalysis-panel,
+  .machine-panel, .nowPower-panel{
+    min-height: calc(33vh - 2rem) !important;
+  }
+}
+@media screen and (max-width: 992px){
+  .first-col{
+    padding: 0;
+  }
+}
+html{
+  height: 100%;
+  width:100%;
+  font-family: Microsoft JhengHei !important;
+}
+body{
+  height: 100%;
+  font-family: Microsoft JhengHei !important;
+}
+*{
+  font-family: '微軟正黑體';
+}
+.container-fluid hr{
+  margin: 0 .25rem;
+}
+.myCol{
+  padding: 0.2rem;
+}
+.childWindow{
+  height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+.childWindow::-webkit-scrollbar-track,.healthAnalysis-divTable::-webkit-scrollbar-track
+{
+  box-shadow: inset 0 0 6px rgba(100,100,100,0.3);
+  border-radius: 4px;
+  background-color: #F5F5F5;
+}
+.childWindow::-webkit-scrollbar,.healthAnalysis-divTable::-webkit-scrollbar
+{
+  width: .25rem;
+  background-color: #F5F5F5;
+}
+.childWindow::-webkit-scrollbar-thumb,.healthAnalysis-divTable::-webkit-scrollbar-thumb
+{
+  border-radius: 1px;
+  box-shadow: inset 0 0 6px rgba(100,100,100,.3);
+  background-color: #555;
+}
+body{
+  padding: 0 1rem;
+  background-color: #e9eef8;
+}
+.container{
+  max-width: 100%;
+}
+.container-fluid{
+  height: 100%;
+  padding-top: 0.5rem;
+}
+.container-fluid > .row > .col-lg-12{
+  max-height: calc(100vh - 0rem);
+}
+.systemStatus-panel,.healthAnalysis-panel,.totalPower-panel,.resultAnalysis-panel,.machine-panel,.nowPower-panel{
+  background-color: #fff;
+  background-clip: border-box;
+  /* box-shadow: inset 0 0 6px rgba(100,100,100,.3); */
+  border: 1px solid rgba(0,0,0,.125);
+  /* border-radius: .25rem; */
+  padding: .5rem 15px;
+  min-height: calc(25vh - 3rem);
+  height: 100%;
+}
+.now-Power-content{
+  position: relative;
+  padding-top: .1rem;
+}
+.now-Power-content .innerContent{
+  padding-top: 3rem;
+}
+.systemStatus-panel{
+  overflow: auto;
+  /* min-height: calc( 70vh - 5rem); */
+  height: 35rem;
+}
+.systemStatus-mid {
+  height: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.systemStatus-mid img{
+  margin:2rem;
+}
+
+.healthAnalysis-panel{
+  height: 35rem !important;
+}
+
+/* -----------新增加的----------- */
+
+.healthAnalysis-title-bar{
+  display:inline;
+}
+
+.healthAnalysis-icon{
+  width: 1.5rem;
+  margin-left: 2rem;
+}
+
+.healthAnalysis-title-bar span{
+  width: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.icon{
+  float: right;
+}
+
+.systemStatus-block-1 span{
+  background-color: #ecf1f9;
+  padding:0.5rem;
+}
+
+.systemStatus-block-2 span{
+  background-color: #ecf1f9;
+  padding: 0.5rem;
+}
+
+.systemStatus-block-1{
+  position: relative;
+  width: 200px;
+  top:-450px;
+  left:30px;
+  z-index: 5;
+}
+
+.systemStatus-block-1 img{
+  padding: 0;
+  margin: 0 0 0 1rem;
+}
+
+.systemStatus-block-2{
+  position: relative;
+  width: 200px;
+  top:-480px;
+  left:500px;
+  z-index: 6;
+}
+
+.systemStatus-block-2 img{
+  padding: 0;
+  margin: 0 0 0 1rem;
+}
+
+.nowPower-panel{
+  position: relative !important;
+  top: 285px !important;
+  left: -1100px !important;
+  z-index: 10;
+}
+
+.totalPower-panel{
+  position: relative !important;
+  top: 285px !important;
+  left: -1100px !important;
+  z-index: 10;
+}
+
+.machine-panel{
+  position: relative !important;
+  top: -8px !important;
+  left: -375px !important;
+  z-index: 13;
+  height: 287px !important;
+}
+
+.resultAnalysis-panel{
+  position: relative !important;
+  top: -301px !important;
+  left: 370px !important;
+  z-index: 10;
+}
+
+.cellContent{
+  position: relative !important;
+  top: -8px !important;
+  left: -355px !important;
+  z-index: 10;
+  width: 95% !important;
+  height: 287px !important;
+}
+
+#collapseMW{
+  padding-top:2.5rem;
+}
+
+body{
+  overflow: hidden;
+}
+
+/* -----------新增加的----------- */
+
+.healthAnalysis-title::before{
+  background-image: url('./icon_black.png');
+  background-size: 100% 100%;
+  display: inline-block;
+  position:relative;
+  top:2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  content:"";
+  vertical-align: baseline;
+  margin-right: .5rem;
+}
+.healthAnalysis-img{
+  padding-top: 2rem;
+  display: block;
+  margin: auto;
+}
+
+.healthAnalysis-light{
+  height: 1.5rem;
+  width: auto;
+}
+
+
+.container hr{
+  margin-top: .25rem;
+}
+.healthAnalysis-line{
+  position: absolute;
+  top: 40px;
+  left: -60px;
+}
+.healthAnalysis-divTable{
+  overflow-y: auto;
+  max-height: 31rem;
+  width: 100%;
+}
+.healthAnalysis-table{
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+.healthAnalysis-table thead{
+  width: 100%;
+  /* background: #8795bf; */
+  color: #666;
+}
+.healthAnalysis-table tbody{
+  color: #697bb0;
+  overflow-y: scroll;
+  min-height: 20rem;
+  width: 100%;
+}
+.healthAnalysis-table tr{
+  width: 100%;
+}
+.healthAnalysis-table thead th{
+  font-size: 15px;
+  color: #444b5e;
+}
+.RPLine-0{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 50%;
+  left: 7.5%;
+  transform: rotate(-40deg);
+}
+.RPLine-1{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 70%;
+  left: 7.5%;
+  transform: rotate(40deg);
+}
+.RPLine-2{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 40%;
+  left: 22.5%;
+}
+.RPLine-3{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 85%;
+  left: 22.5%;
+}
+.RPLine-4{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: rotate(40deg);
+}
+.RPLine-5{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: rotate(-40deg);
+}
+.RPLine-6{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: rotate(-40deg);
+}
+.RPLine-7{
+  width: 35%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 75%;
+  left: 57%;
+  transform: rotate(22.5deg);
+}
+.RPLine-8{
+  width: 20%;
+  border-top: .1rem solid #CCC;
+  position: absolute;
+  top: 40%;
+  left: 72.5%;
+}
+.img-thumbnail{
+  border: none;
+}
+
+.table-fixed thead {
+  width: 97%;
+}
+.totalPower-content{
+  padding: 1.5rem 15px;
+}
+.machine-content{
+  padding: 0.5rem 1rem 0 1rem;
+  text-align: center;
+}
+.machine-content > .row{
+  padding: .75rem 0 .75rem 0;
+  height: 3.5rem;
+  border-bottom: 1px solid #999;
+}
+.machine-content > .row:nth-child(4){
+  border-bottom: none;
+}
+.machine-content > .row >.col-3 ,.totalPower-content > .row > .col-4{
+  padding-right: 0;
+  padding-left: 2rem;
+  padding-top: 0.3rem;
+}
+.totalPower-content > .row{
+  padding-top: .5rem;
+  border-bottom: 1px solid #999;
+  padding-bottom: .5rem;
+}
+.totalPower-content > .row:last-child{
+  border-bottom: none;
+}
+.totalPower-content > .row:first-child > .col-4{
+  padding-top: 1rem;
+  margin-top: -0.75rem;
+}
+.totalPower-content > .row > .col-4{
+  border-right: 1px solid #999;
+  padding-top: 1.5rem;
+  margin-top: -1.1rem;
+  padding-left: 0;
+  text-align: center;
+}
+.totalPower-content .progress{
+  width: 100%;
+}
+.totalPower-content .progress-bar{
+  background: linear-gradient(to right,#8795bf , #fefefe);
+}
+.progress{
+  background: #e8ebee;
+  font-weight: 700;
+  position: relative;
+}
+.progress-text{
+  position: absolute;
+  line-height: 2rem;
+  font-weight: inherit;
+  text-align: right;
+}
+.progress,.progress-bar{
+  border-radius:0px;
+  height: 30px;
+  color: #697bb0;
+  /* text-shadow: #666 0px 0px 3px; */
+}
+.totalPower-content-span,.machine-content-span{
+  line-height: 1rem;
+  vertical-align: super;
+  font-size: 15px;
+  font-weight: initial;
+  color: #6677A8;
+}
+.totalPower-status-type{
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+.totalPower-status-text{
+  padding-left: 1rem;
+}
+.machine-title::before{
+  background-image: url('./iconAchievedToday.png');
+  background-size: 100% 100%;
+  display: inline-block;
+  position:relative;
+  top:2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  content:"";
+  font-weight: bold;
+  vertical-align: baseline;
+  margin-right: .5rem;
+}
+.totalPower-title::before,.resultAnalysis-title::before,.nowPower-title::before{
+  background-image: url('./iconDataAnalysis.png');
+  background-size: 100% 100%;
+  display: inline-block;
+  position:relative;
+  top:2px;
+  width: 1.25rem;
+  height: 1.25rem;
+  content:"";
+  font-weight: bold;
+  vertical-align: baseline;
+  margin-right: .5rem;
+  
+}
+.nowPower-content{
+  position: relative;
+}
+
+#nowPower-Value{
+  position: absolute;
+  right: 1rem;
+  top: 0.3rem;
+  color: #697BB0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#nowPower{
+  width: 100%;
+}
+#nowPower-min{
+  position: absolute;
+  left: 1rem;
+  top: 12rem;
+}
+#nowPower-max{
+  position: absolute;
+  right: -0.3rem;
+  top: 12rem;
+}
+#nowPower-w{
+  position: absolute;
+  top: 13rem;
+  right:0;
+}
+.systemStatus-title{
+  display: block;
+  height: 10rem;
+  width: 9rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.systemStatus-icon {
+  padding: 0.8rem;
+}
+.systemStatus-icon .mc{
+  padding-top: 0;
+}
+.systemStatus-icon  > span{
+  font-size: 1.1rem;
+  display: inline;
+  padding-top: 0.2rem;
+  margin-left: 4rem;
+}
+.title{
+  font-size: 1.125rem;
+  font-weight: bolder;
+}
+.pieFont{
+  color: #6677A8;
+  font-weight: 500;
+}

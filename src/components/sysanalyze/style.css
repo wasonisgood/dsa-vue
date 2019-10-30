@@ -1,0 +1,262 @@
+/* In alphabetical order */
+
+a:visited,
+a:active,
+a:link,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: #eaeff7;
+    font-family: Microsoft JhengHei;
+}
+
+select {
+    text-align-last: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("icon/select_arrow.png");
+    background-size: 8px 8px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+textarea {
+    resize: none !important;
+    overflow-y: scroll !important;
+}
+
+textarea::-webkit-scrollbar,
+.tool-storage-content::-webkit-scrollbar {
+    width: 1.275rem;
+}
+
+textarea::-webkit-scrollbar-track,
+.tool-storage-content::-webkit-scrollbar-track {
+    border-left: 1px solid #bbc4d2;
+    border-right: 1px solid #bbc4d2;
+    padding: 0 0;
+    background-color: #c9d1dc;
+}
+
+textarea::-webkit-scrollbar-button:single-button:vertical:decrement,
+.tool-storage-content::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-left: 1px solid #bbc4d2;
+    border-right: 1px solid #bbc4d2;
+    border-top: 1px solid #bbc4d2;
+    background-color: #c9d1dc;
+    background-image: url("icon/scroll-uparrow.png");
+    background-size: 8px 8px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+textarea::-webkit-scrollbar-button:single-button:vertical:increment,
+.tool-storage-content::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-left: 1px solid #bbc4d2;
+    border-right: 1px solid #bbc4d2;
+    border-bottom: 1px solid #bbc4d2;
+    background-color: #c9d1dc;
+    background-image: url("icon/scroll-downarrow.png");
+    background-size: 8px 8px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+/* class selector */
+
+.background-primary {
+    background-color: #eaeff8cc;
+}
+
+.background-white {
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.bottom-navbar {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    bottom: 0px;
+    margin-left: -15px;
+}
+
+.bottom-navitem {
+    width: 20%;
+    height: 100%;
+}
+
+.card-header {
+    height: 12%;
+}
+
+.diagnosisForm {
+    width: 54%;
+    height: 71%;
+    margin-right: 6%;
+    margin-top: 4%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    border: 1px #bbc4d2 solid;
+    background-color: rgb(234, 239, 248, 0.8);
+}
+
+.diagnosisForm input {
+    width: 25%;
+}
+
+.diagnosisForm>div>span {
+    width: 20%;
+    color: #6a7cb1;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.diagnosisForm span {
+    line-height: 12px;
+}
+
+.diagnosisForm>div>textarea {
+    width: 80%;
+    margin-top: 4px;
+}
+
+.diagnosisForm>div>input,
+.diagnosisForm>div>textarea {
+    color: #6a7cb1;
+    font-size: 0.75rem;
+    border: 1px #bbc4d2 solid;
+    margin-left: 20px;
+}
+
+.diagnosisDescribe-mobile {
+    height: 20vh;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.diagnosisDescribe-mobile textarea {
+    height: 80%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.diagnosisResult-mobile {
+    height: 5vh;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.diagnosisResult-mobile input {
+    width: 70%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.lineChartDiv {
+    width: 94%;
+    height: 86%;
+    margin: 0 3%;
+}
+
+.ringChartDiv {
+    width: 32.5%;
+    height: 86%;
+    margin-left: 3%;
+    float: left;
+}
+
+.ringChartDiv-mobile {
+    width: 94%;
+    height: 40vh;
+    margin: 0 3%;
+}
+
+.similarity {
+    margin-top: 1.5vh;
+    height: calc(50% - 1.33vh);
+    width: 96.4583vw;
+    margin-left: 1.77083vw;
+}
+
+.similarity-div {
+    width: 47.8645vw;
+    border: 1px #bbc4d2 solid;
+}
+
+.spindleChart {
+    margin-top: 1.5vh;
+    height: 50%;
+    width: 96.4583vw;
+    margin-left: 1.77083vw;
+}
+
+.spindleChart-div {
+    width: 31.66vw;
+    border: 1px #bbc4d2 solid;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #2d3d4f;
+}
+
+.subtitleDiv {
+    width: 94%;
+    height: calc(5.56vh - 2px);
+    margin: 0 3%;
+    border-bottom: 1px #bbc4d2 solid;
+}
+
+.text-black-1 {
+    color: #434b5d;
+}
+
+.text-blue-1 {
+    color: #6a7cb1;
+}
+
+.text-blue-2 {
+    color: #8192b9;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-size-11 {
+    font-size: 0.6875rem;
+}
+
+.text-size-11-7 {
+    font-size: 0.73125rem;
+}
+
+.text-size-14 {
+    font-size: 0.875rem;
+}
+
+.text-size-16 {
+    font-size: 1rem;
+}
+
+.text-weight-bold {
+    font-weight: 700;
+}
+
+.text-weight-bolder {
+    font-weight: 900;
+}
+
+.text-weight-light {
+    font-weight: 300;
+}
+
+.text-weight-normal {
+    font-weight: 400;
+}
