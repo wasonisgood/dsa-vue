@@ -15,6 +15,8 @@ import toolana from './components/manufacture/機台分析/index.vue'
 
 // 刀具管理
 import tool from './components/tool/index.vue'
+//刀具追蹤
+import track from './components/track/index.vue'
 // 系統狀態
 import System from './components/SystemIndex/index.vue'
 //水位分析
@@ -68,6 +70,11 @@ export default new Router({
                     path: '/tool',
                     name: 'tool',
                     component: tool
+                },
+				{
+                    path: '/track',
+                    name: 'track',
+                    component: track
                 },
                 {
                     path: '/waterlevel',
