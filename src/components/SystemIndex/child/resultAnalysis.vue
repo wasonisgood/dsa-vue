@@ -1,18 +1,30 @@
 <template>
-    <div>
-        <div class="h-lg-100 resultAnalysis-item">
-            <div class="resultAnalysis-items">
-                <div class="resultAnalysis-name"></div>
+    <div class="content-body">
+        <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(resultAnalysisData)">
+            <span class="workTitle">
+                <img class="mr-2" width="20" src="@/assets/home/img/output-status.png" />本月產出狀況
+            </span>
+        </div>
+        <div class="h-lg-90" id="resultAnalysis" v-show="resultAnalysisData.flag">
+            <div class="w-lg-100 w-xs-100">
                 <hr />
-                <div class="resultAnalysis-number"></div>
             </div>
-            <div class="resultAnalysis-items">
-                <div class="resultAnalysis-name"></div>
-                <hr />
-                <div class="resultAnalysis-number"></div>
+            <div class="h-lg-90 w-lg-100 w-xs-100">
+                <div class="h-lg-100 resultAnalysis-item">
+                    <div class="resultAnalysis-items">
+                        <div class="resultAnalysis-name"></div>
+                        <hr />
+                        <div class="resultAnalysis-number"></div>
+                    </div>
+                    <div class="resultAnalysis-items">
+                        <div class="resultAnalysis-name"></div>
+                        <hr />
+                        <div class="resultAnalysis-number"></div>
+                    </div>
+                </div>
+                <div :id="resultAnalysisData.data.id" class="resultAnalysis-chart"></div>
             </div>
         </div>
-        <div :id="data.id" class="resultAnalysis-chart"></div>
     </div>
 </template>
 <script>
@@ -20,11 +32,12 @@ import "../../../assets/assets/js/highcharts.js";
 export default {
     name: "resultAnalysis",
     props: {
-        data: { type: Object },
+        resultAnalysisData: { type: Object },
+        Toggle: { type: Function }
     },
     mounted() {
         let chartSize = window.innerWidth > 992 ? (window.innerWidth - 768) * 0.0434 + 150 : 180;
-        window.pieData = this.data.obj;
+        window.pieData = this.resultAnalysisData.data.obj;
         window.pieDatas = [...window.pieData]
         let ReSet = (num) => {
             clearInterval(window.AutoStart)
@@ -49,7 +62,7 @@ export default {
             }, false, true)
             window.AutoStart = setInterval(window.pieCarousel, 3000);
         }
-        window.window.PieChart = Highcharts.chart(this.data.id, {
+        window.PieChart = Highcharts.chart(this.resultAnalysisData.data.id, {
             chart: {
                 height: 230,
                 spacing: [0, 0, 0, 0],
@@ -245,13 +258,56 @@ export default {
 }
 
 .resultAnalysis-chart {
-    height: 50%;
+    height: 100%;
     width: 70%;
     float: left;
 }
+
+.workTitle {
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #444a5a;
+    float: left;
+    font-weight: bold;
+}
+
+.content-body {
+    border: 0.1rem solid #bbc4d2;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .w-lg-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .h-lg-90 {
+        height: 90%;
+    }
+    .h-lg-100 {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .resultAnalysis-items {
         padding: 3rem 0;
+    }
+    .w-xs-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .h-xl-100 {
+        height: 100%;
     }
 }
 </style>

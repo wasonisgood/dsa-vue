@@ -1,12 +1,26 @@
 <template>
-    <div class="cellContent">
-        <div id="collapseMW" class="collapse show">
-            <div v-for="(machine, index) in data" v-bind:key="index" class="blockMW">
-                <div class="blockMW__title">
-                    <div :class="'BG-' + machine.class">{{machine.name}}</div>
-                </div>
-                <div :class="'blockMW__content ' + machine.class">
-                    <div>{{machine.value}}</div>
+    <div class="content-body">
+        <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(blockMWData)">
+            <span class="workTitle">
+                <img class="mr-2" width="20" src="@/assets/home/img/tools.png" />加工元件
+            </span>
+        </div>
+        <div class="h-lg-90" id="blockMW" v-show="blockMWData.flag">
+            <div class="w-lg-100 w-xs-100">
+                <hr />
+            </div>
+            <div class="h-lg-90 w-lg-100 w-xs-100">
+                <div class="cellContent">
+                    <div id="collapseMW">
+                        <div v-for="(machine, index) in blockMWData.data" v-bind:key="index" class="blockMW">
+                            <div class="blockMW__title">
+                                <div :class="'BG-' + machine.class">{{machine.name}}</div>
+                            </div>
+                            <div :class="'blockMW__content ' + machine.class">
+                                <div>{{machine.value}}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -16,12 +30,28 @@
 export default {
     name: "blockMW",
     props: {
-        data: { type: Object },
+        blockMWData: { type: Object },
+        Toggle: { type: Function }
     }
 };
 </script>
 <style>
-/* for machining_workpiece */
+.workTitle {
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #444a5a;
+    float: left;
+    font-weight: bold;
+}
+
+.content-body {
+    border: 0.1rem solid #bbc4d2;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 5px;
+}
 
 .cellContent {
     padding: 5% 0;
@@ -121,10 +151,32 @@ export default {
     color: #19b0c6;
 }
 
+@media screen and (min-width: 992px) {
+    .w-lg-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .h-lg-90 {
+        height: 90%;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .blockMW {
         height: 80px;
         margin-bottom: 10px;
+    }
+    .w-xs-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .h-xl-100 {
+        height: 100%;
     }
 }
 </style>

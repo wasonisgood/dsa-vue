@@ -1,236 +1,81 @@
 <template>
     <div>
-        <div style="width:100%; height:80vh; padding: 15px 0; overflow-x: hidden;" id="phone-body">
-            <div class="container-fluidcontainer-on-phone h-100">
+        <div class="home-container">
+            <div class="h-100">
                 <div class="row h-lg-60">
                     <div id="system-header" class="h-lg-100 w-lg-60 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(system)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/system-status.png" />系統狀態
-                                </span>
-                                <span class="workTitle hide-on-phone" style="float: right; margin-right: 15px;">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/Idle.png" />Idle
-                                </span>
-                                <span class="workTitle hide-on-phone" style="float: right;">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/Error.png" />Error
-                                </span>
-                                <span class="workTitle hide-on-phone" style="float: right;">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/Run.png" />Run
-                                </span>
-                            </div>
-                            <div class="h-lg-90" id="system" v-show="system.flag">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-100 w-lg-50 w-xs-100" style="padding-top: 20px">
-                                    <div class="w-lg-50 w-xs-100 system-status">
-                                        <div class="system-title" style="float: left;">
-                                            <span>CNC</span>
-                                            <br />
-                                            <span>NXV1020A</span>
-                                        </div>
-                                        <img class="hide-on-phone" style="margin-top: 10px; margin-right: 70px;" width="30" src="@/assets/home/img/Error.png" />
-                                        <span class="hide-on-computer status-phone" style="float: right;">
-                                            <img class="mr-2" width="20" src="@/assets/home/img/Error.png" />Error
-                                        </span>
-                                    </div>
-                                    <div class="h-lg-100 w-lg-100 w-xs-100">
-                                        <img class="h-xl-100 h-lg-80 image-bg" src="@/assets/home/img/BG.png" />
-                                    </div>
-                                </div>
-                                <div class="h-lg-100 w-lg-50 w-xs-100" style="padding-top: 20px">
-                                    <div class="w-lg-50 w-xs-100 system-status">
-                                        <div class="system-title" style="float: left;">
-                                            <span>CNC</span>
-                                            <br />
-                                            <span>NXV600A</span>
-                                        </div>
-                                        <img class="hide-on-phone" style="margin-top: 10px; margin-right: 70px;" width="30" src="@/assets/home/img/Run.png" />
-                                        <span class="hide-on-computer status-phone" style="float: right;">
-                                            <img class="mr-2" width="20" src="@/assets/home/img/Run.png" />Run
-                                        </span>
-                                    </div>
-                                    <div class="h-lg-100 w-lg-100 w-xs-100">
-                                        <img class="h-xl-100 h-lg-80 image-bg" src="@/assets/home/img/BG.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <systemStatus :systemStatusData="systemStatus" :Toggle="Toggle"></systemStatus>
                     </div>
                     <div id="orderTable-header" class="h-lg-100 w-lg-40 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(orderTable)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/icon_black.png" />訂單資訊
-                                </span>
-                            </div>
-                            <div class="h-lg-90" v-show="orderTable.flag" id="orderTable">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-90 w-lg-100 hide-on-phone">
-                                    <div class="table-header">
-                                        <div class="row">
-                                            <div class="col-lg-2">訂單日期</div>
-                                            <div class="col-lg-2">訂單編號</div>
-                                            <div class="col-lg-2">案號</div>
-                                            <div class="col-lg-2">交期</div>
-                                            <div class="col-lg-2">完成日期</div>
-                                            <div class="col-lg-2">交貨</div>
-                                        </div>
-                                    </div>
-                                    <div class="h-lg-90 table-value">
-                                        <div class="row" v-for="(data, index) in orderTable.data" v-bind:key="index">
-                                            <div class="col-lg-2">{{data.orderDate}}</div>
-                                            <div class="col-lg-2">{{data.orderNumber}}</div>
-                                            <div class="col-lg-2">{{data.caseNumber}}</div>
-                                            <div class="col-lg-2">{{data.deliveryDate}}</div>
-                                            <div class="col-lg-2">{{data.completeDate}}</div>
-                                            <div class="col-lg-2" style="padding-top: 5px;">
-                                                <input type="checkbox" v-model="data.deliveryFlag" :id="'order_' + index" />
-                                                <label :for="'order_' + index">
-                                                    <span></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-xs-100 hide-on-computer phone-table">
-                                    <div class="table-header">
-                                        <div class="row">
-                                            <div class="w-xs-20">訂單日期</div>
-                                            <div class="w-xs-25">訂單編號</div>
-                                            <div class="w-xs-15">案號</div>
-                                            <div class="w-xs-20">交期</div>
-                                            <div class="w-xs-20">完成日期</div>
-                                        </div>
-                                    </div>
-                                    <div class="table-value">
-                                        <div v-for="(data, index) in sortNumbers" v-bind:key="index" :class="data.deliveryFlag? 'row finished':'row unfinished'">
-                                            <div class="w-xs-20">{{data.orderDate}}</div>
-                                            <div class="w-xs-25">{{data.orderNumber}}</div>
-                                            <div class="w-xs-15">{{data.caseNumber}}</div>
-                                            <div class="w-xs-20">{{data.deliveryDate}}</div>
-                                            <div class="w-xs-20">{{data.completeDate}}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <orderTable :orderTableData="orderTable" :Toggle="Toggle"></orderTable>
                     </div>
                 </div>
                 <div class="row h-lg-40">
                     <div id="nowPowerChart-header" class="h-lg-100 w-lg-20 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(nowPowerChart)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/instant-power-consumption.png" />系統即時用電量
-                                </span>
-                            </div>
-                            <div class="w-lg-90" v-show="nowPowerChart.flag" id="nowPowerChart">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <gauge :data="nowPowerChart.data"></gauge>
-                                </div>
-                            </div>
-                        </div>
+                        <gauge :nowPowerChartData="nowPowerChart" :Toggle="Toggle"></gauge>
                     </div>
                     <div id="totalPower-header" class="h-lg-100 w-lg-20 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(totalPower)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/system-status.png" />本月累計用電量
-                                </span>
-                            </div>
-                            <div class="h-lg-90" id="totalPower" v-show="totalPower.flag">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <totalPower :data="totalPower.data"></totalPower>
-                                </div>
-                            </div>
-                        </div>
+                        <totalPower :totalPowerData="totalPower" :Toggle="Toggle"></totalPower>
                     </div>
                     <div id="blockMW-header" class="h-lg-100 w-lg-20 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(blockMW)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/tools.png" />加工元件
-                                </span>
-                            </div>
-                            <div class="h-lg-90" id="blockMW" v-show="blockMW.flag">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <blockMW :data="blockMW.data"></blockMW>
-                                </div>
-                            </div>
-                        </div>
+                        <blockMW :blockMWData="blockMW" :Toggle="Toggle"></blockMW>
                     </div>
                     <div id="machineUtilizationRate-header" class="h-lg-100 w-lg-20 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(machineUtilizationRate)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/iconAchievedToday.png" />機台嫁動率
-                                </span>
-                            </div>
-                            <div class="h-lg-90" id="machineUtilizationRate" v-show="machineUtilizationRate.flag">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <div class="h-lg-100 machine-content">
-                                        <circleAnalysis :data="machineUtilizationRate.data" :bus="bus"></circleAnalysis>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <circleAnalysis :circleAnalysisData="machineUtilizationRate" :bus="bus" :Toggle="Toggle"></circleAnalysis>
                     </div>
                     <div id="resultAnalysis-header" class="h-lg-100 w-lg-20 w-xs-100 home-content">
-                        <div class="content-body">
-                            <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(resultAnalysis)">
-                                <span class="workTitle">
-                                    <img class="mr-2" width="20" src="@/assets/home/img/output-status.png" />本月產出狀況
-                                </span>
-                            </div>
-                            <div class="h-lg-90" id="resultAnalysis" v-show="resultAnalysis.flag">
-                                <div class="w-lg-100 w-xs-100">
-                                    <hr />
-                                </div>
-                                <div class="h-lg-90 w-lg-100 w-xs-100">
-                                    <resultAnalysis :data="resultAnalysis.data"></resultAnalysis>
-                                </div>
-                            </div>
-                        </div>
+                        <resultAnalysis :resultAnalysisData="resultAnalysis" :Toggle="Toggle"></resultAnalysis>
                     </div>
                 </div>
             </div>
         </div>
-        <Footer :scrollToTag="scrollToTag" :system="system" :orderTable="orderTable" :nowPowerChart="nowPowerChart" :totalPower="totalPower" :blockMW="blockMW"
-            :machineUtilizationRate="machineUtilizationRate" :resultAnalysis="resultAnalysis"></Footer>
+
+        <!-- 手機版footer -->
+        <footer class="d-sm-none phone-footer">
+            <div style="width: 100vw; height: 100%;">
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/system-status-phone.png" class="phone-footer-img" @click="scrollToTag(systemStatus)" />
+                </div>
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/search-phone.png" class="phone-footer-img" @click="scrollToTag(orderTable)" />
+                </div>
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/instant-power-consumption-phone.png" class="phone-footer-img" @click="scrollToTag(nowPowerChart)" />
+                </div>
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/electronic-phone.png" class="phone-footer-img" @click="scrollToTag(totalPower)" />
+                </div>
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/tools-phone.png" class="phone-footer-img" @click="scrollToTag(blockMW)" />
+                </div>
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/iconAchievedToday-phone.png" class="phone-footer-img" @click="scrollToTag(machineUtilizationRate)" />
+                </div>
+                <div class="phone-footer-container">
+                    <img src="@/assets/footer/img/output-status-phone.png" class="phone-footer-img" @click="scrollToTag(resultAnalysis)" />
+                </div>
+            </div>
+        </footer>
     </div>
 </template>
 
 <script>
 import Vue from 'vue'
-import gauge from './gauge/gauge.vue'
-import circleAnalysis from './circleAnalysis/circleAnalysis.vue'
-import resultAnalysis from './resultAnalysis/resultAnalysis.vue'
-import totalPower from './totalPower/totalPower.vue'
-import blockMW from './blockMW/blockMW.vue'
+import gauge from './child/gauge.vue'
+import circleAnalysis from './child/circleAnalysis.vue'
+import resultAnalysis from './child/resultAnalysis.vue'
+import totalPower from './child/totalPower.vue'
+import blockMW from './child/blockMW.vue'
+import orderTable from './child/orderTable.vue'
+import systemStatus from './child/systemStatus.vue'
 
 export default {
     name: "home",
-    components: { gauge, circleAnalysis, resultAnalysis, totalPower, blockMW },
+    components: { gauge, circleAnalysis, resultAnalysis, totalPower, blockMW, orderTable, systemStatus },
     data() {
         return {
             bus: new Vue(),
-            system: {
+            systemStatus: {
                 name: "system-header",
                 flag: true
             },
@@ -333,7 +178,7 @@ export default {
                     allEnergy: 5,
                     weekEnergy: 1.2,
                     monthEnergy: 1.9,
-                    seasonEnergy: 2.2,
+                    seasonEnergy: 2.5,
                     accumulatedEnergy: 4
                 }
             },
@@ -400,7 +245,6 @@ export default {
                 this.$set(this.machineUtilizationRate, 'flag', false);
                 this.$set(this.resultAnalysis, 'flag', false);
             }, 500);
-            document.getElementById("footer").style.display = "none";
         }
         window.onresize = () => {
             setTimeout(() => {
@@ -413,8 +257,7 @@ export default {
             for (let i = 0; i < machineUtilizationRateData.obj.length; i++) {
                 machineUtilizationRateData.obj[i].value = Math.floor(Math.random() * machineUtilizationRateData.end) + machineUtilizationRateData.start;
             }
-            this.bus.$emit('drawBase')
-            // this.$set(this.machineUtilizationRate, 'data', machineUtilizationRateData);
+            this.bus.$emit('drawBase');
         }, 1000);
         setInterval(() => {
             // nowPower
@@ -436,14 +279,6 @@ export default {
                     behavior: 'smooth'
                 });
             }, 100)
-        }
-    },
-    computed: {
-        sortNumbers: function () {
-            let buffer = this.orderTable.data.slice();
-            return buffer.sort(function (x, y) {
-                return y.deliveryFlag - x.deliveryFlag;
-            });
         }
     }
 };

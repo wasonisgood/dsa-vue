@@ -1,15 +1,33 @@
 <template>
-    <canvas :id="data.id"></canvas>
+    <div class="content-body">
+        <div class="w-lg-100 w-xs-100 text-left" @click="Toggle(circleAnalysisData)">
+            <span class="workTitle">
+                <img class="mr-2" width="20" src="@/assets/home/img/iconAchievedToday.png" />機台嫁動率
+            </span>
+        </div>
+        <div class="h-lg-90" id="machineUtilizationRate" v-show="circleAnalysisData.flag">
+            <div class="w-lg-100 w-xs-100">
+                <hr />
+            </div>
+            <div class="h-lg-90 w-lg-100 w-xs-100">
+                <div class="h-lg-100">
+                    <canvas :id="circleAnalysisData.data.id"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <script>
 export default {
     name: "circleAnalysis",
     props: {
-        data: { type: Object },
+        circleAnalysisData: { type: Object },
         bus: { type: undefined },
+        Toggle: { type: Function }
     },
     data() {
         return {
+            data: Object,
             canvas: undefined,
             ctx: undefined,
             positionX: 150,
@@ -18,7 +36,7 @@ export default {
         }
     },
     mounted() {
-        this.canvas = document.getElementById(this.data.id);
+        this.canvas = document.getElementById(this.circleAnalysisData.data.id);
         this.ctx = this.canvas.getContext('2d');
         this.canvas.width = "300";
         this.canvas.height = "300";
@@ -30,12 +48,9 @@ export default {
 
         this.bus.$on('drawBase', this.drawBase)
     },
-    updated: function () {
-        this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-        this.drawBase();
-    },
     methods: {
         drawBase: function () {
+            this.data = this.circleAnalysisData.data;
             this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
             this.drawCircle();
             this.drawScale();
@@ -140,4 +155,45 @@ export default {
 };
 </script>
 <style>
+.workTitle {
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #444A5A;
+    float: left;
+    font-weight: bold;
+}
+
+.content-body {
+    border: 0.1rem solid #bbc4d2;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .w-lg-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+    .h-lg-90 {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .w-xs-100 {
+        float: left;
+        width: 100%;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .h-xl-100 {
+        height: 100%;
+    }
+}
 </style>
