@@ -37,7 +37,6 @@ export default {
     position: fixed;
     width: 100%;
     background: #e9eef8;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 .panel {
     background-color: #fff;

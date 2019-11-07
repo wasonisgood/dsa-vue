@@ -34,25 +34,25 @@
         <footer class="d-sm-none phone-footer">
             <div style="width: 100vw; height: 100%;">
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/system-status-phone.png" class="phone-footer-img" @click="scrollToTag(systemStatus)" />
+                    <img src="@/assets/home/img/footer/system-status-phone.png" class="phone-footer-img" @click="scrollToTag(systemStatus)" />
                 </div>
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/search-phone.png" class="phone-footer-img" @click="scrollToTag(orderTable)" />
+                    <img src="@/assets/home/img/footer/search-phone.png" class="phone-footer-img" @click="scrollToTag(orderTable)" />
                 </div>
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/instant-power-consumption-phone.png" class="phone-footer-img" @click="scrollToTag(nowPowerChart)" />
+                    <img src="@/assets/home/img/footer/instant-power-consumption-phone.png" class="phone-footer-img" @click="scrollToTag(nowPowerChart)" />
                 </div>
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/electronic-phone.png" class="phone-footer-img" @click="scrollToTag(totalPower)" />
+                    <img src="@/assets/home/img/footer/electronic-phone.png" class="phone-footer-img" @click="scrollToTag(totalPower)" />
                 </div>
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/tools-phone.png" class="phone-footer-img" @click="scrollToTag(blockMW)" />
+                    <img src="@/assets/home/img/footer/tools-phone.png" class="phone-footer-img" @click="scrollToTag(blockMW)" />
                 </div>
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/iconAchievedToday-phone.png" class="phone-footer-img" @click="scrollToTag(machineUtilizationRate)" />
+                    <img src="@/assets/home/img/footer/iconAchievedToday-phone.png" class="phone-footer-img" @click="scrollToTag(machineUtilizationRate)" />
                 </div>
                 <div class="phone-footer-container">
-                    <img src="@/assets/footer/img/output-status-phone.png" class="phone-footer-img" @click="scrollToTag(resultAnalysis)" />
+                    <img src="@/assets/home/img/footer/output-status-phone.png" class="phone-footer-img" @click="scrollToTag(resultAnalysis)" />
                 </div>
             </div>
         </footer>
@@ -285,6 +285,5 @@ export default {
 </script>
 <style lang="css">
 @import url("./css/home.css");
-@import url("../../assets/css/frameworkV2.css");
 @import url("../../assets/css/icon.css");
 </style>

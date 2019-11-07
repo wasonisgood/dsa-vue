@@ -28,7 +28,7 @@
     </div>
 </template>
 <script>
-import "../../../assets/assets/js/highcharts.js";
+import "../../../assets/js/highcharts.js";
 export default {
     name: "resultAnalysis",
     props: {

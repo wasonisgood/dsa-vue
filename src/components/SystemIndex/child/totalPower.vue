@@ -18,7 +18,7 @@
                         <div class="totalPower-value">
                             <div class="progress-container">
                                 <div :class="energy.class" :style="{ width: (totalPowerData.data[energy.key] / totalPowerData.data.allEnergy * 100) + '%' }">
-                                    <span>{{totalPowerData.data[energy.key]}}</span>
+                                    <span>{{totalPowerData.data[energy.key]}}kwh</span>
                                 </div>
                             </div>
                         </div>

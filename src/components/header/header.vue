@@ -178,12 +178,12 @@
                                 <img src="@/assets/header/img/member-phone.png" class="icon ml-0" width="60" alt="" />USER
                             </a>
                         </li>
-                        <li class="nav-item">                            
+                        <li class="nav-item">
                             <router-link tag="a" to="/machine">
                                 <img class="icon" src="@/assets/header/img/icon-04-phone.png" width="30" />設備狀態
                             </router-link>
                         </li>
-                        <li class="nav-item">           
+                        <li class="nav-item">
                             <router-link tag="a" to="/analysis">
                                 <img class="icon" src="@/assets/header/img/icon-02-phone.png" width="30" />智能分析
                             </router-link>

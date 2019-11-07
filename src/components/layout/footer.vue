@@ -2,7 +2,7 @@
     <div class="d-none d-md-block">
         <footer class="d-flex align-items-center justify-content-between">
             <div style="margin-left: 3.96875vw;">{{time}}</div>
-            <img style="margin-right: 3.96875vw; height: 52%;" src="@/assets/footer/img/footer_logo.png">
+            <img style="margin-right: 3.96875vw; height: 52%;" src="@/assets/footer_logo.png">
         </footer>
     </div>
 </template>
@@ -35,14 +35,4 @@ export default {
 };
 </script>
 <style>
-@media screen and (max-width: 992px) {
-    .hide-on-phone {
-        display: none;
-    }
-}
-@media screen and (min-width: 992px) {
-    .hide-on-computer {
-        display: none;
-    }
-}
 </style>

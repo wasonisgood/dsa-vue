@@ -23,7 +23,7 @@
     </div>
 </template>
 <script>
-import "../../../assets/assets/js/gauge.min.js";
+import "../../../assets/js/gauge.min.js";
 export default {
     name: "nowPower",
     props: {

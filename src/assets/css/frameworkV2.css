@@ -25,9 +25,6 @@
 }
 
 @media (max-width: 992px) {
-	#time {
-		margin: 0 !important;
-	}
 	.co {
 		margin: 0 !important;
 	}
@@ -55,9 +52,6 @@
 }
 
 @media (max-width: 1024px) {
-	#time {
-		margin: 0 !important;
-	}
 	.co {
 		margin: 0 !important;
 	}
@@ -111,6 +105,12 @@ li {
 	color: #FFF;
 }
 
+.badge-mini {
+	position: relative;
+	bottom: 12px;
+	right: 8px;
+}
+
 .bar {
 	background-image: -webkit-gradient(linear, left top, right top, from(#bcc6da), color-stop(#245b91), to(#172846));
 	background-image: linear-gradient(to right, #bcc6da, #245b91, #172846);
@@ -145,11 +145,6 @@ li {
 	padding-top: 1.48vh;
 	margin-left: 10vw;
 }
-
-#time {
-	margin-left: 5rem;
-}
-
 /*# sourceMappingURL=frameworkV2.css.map */
 
 /* phone footer */

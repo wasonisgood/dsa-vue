@@ -113,6 +113,9 @@ export default {
         z-index: 1;
         margin-bottom: -70px;
     }
+    .hide-on-computer {
+        display: none;
+    }
 }
 @media screen and (max-width: 992px) {
     .w-xs-100 {
@@ -133,6 +136,9 @@ export default {
     }
     .system-status {
         padding: 0;
+    }
+    .hide-on-phone {
+        display: none;
     }
 }
 @media screen and (min-width: 1800px) {

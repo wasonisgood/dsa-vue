@@ -13,7 +13,7 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <!--手機-->
-                                <img class="align-self-center hidden_big" src="@/assets/break-reason.png" width="20" height="20">
+                                <img class="align-self-center hidden_big" src="@/assets/malfunctionPic/break-reason.png" width="20" height="20">
                                 <strong class="ml-2 tit hidden_big">故障原因分析</strong>
                             <div class="row hidden_big">
                                 <div>
@@ -121,7 +121,7 @@
                                 <!--電腦-->
                                 <div class="col-xl-8">
                                     <div class="mb-3">
-                                        <img class="align-self-center" src="@/assets/break-reason.png" width="25" height="25">
+                                        <img class="align-self-center" src="@/assets/malfunctionPic/break-reason.png" width="25" height="25">
                                         <strong class="ml-3 mt-5 tibold">故障原因分析</strong>
                                     </div>
                                     <hr style="background-color:#8192b9;">
@@ -207,7 +207,7 @@
                 <div class="modal-body modblue">
                     <div class="container-fluid">
                         <!--手機-->
-                        <img class="align-self-center hidden_big" src="@/assets/break-reason.png" width="20" height="20">
+                        <img class="align-self-center hidden_big" src="@/assets/malfunctionPic/break-reason.png" width="20" height="20">
                         <strong class="ml-2 tit hidden_big">建議處理方式</strong>
                         <div class="hidden_big">
                             <div class="card">   
@@ -262,7 +262,7 @@
                             </div>
                             <div class="col-xl-8 col-12">
                                 <div class="mb-3">
-                                    <img class="align-self-center" src="@/assets/break-reason.png" width="25" height="25">
+                                    <img class="align-self-center" src="@/assets/malfunctionPic/break-reason.png" width="25" height="25">
                                     <strong class="ml-3 mt-5 tibold">建議處理方式</strong>
                                     <div id="btn2" class="btn btnblue2 float-right"
                                           @click="modalAction2();modalAction1();">
@@ -310,12 +310,12 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <!--手機-->
-                        <img class="align-self-center hidden_big" src="@/assets/break-reason.png" width="20" height="20">
+                        <img class="align-self-center hidden_big" src="@/assets/malfunctionPic/break-reason.png" width="20" height="20">
                         <strong class="ml-2 tit hidden_big">故障報告</strong>
                             <div class="report-result hidden_big">
                                 <button type="button" class="btn btn-outline-light" data-toggle="modal"
                                                     data-target="#modelId5">
-                                                    <img width="30" src="@/assets/report.png">
+                                                    <img width="30" src="@/assets/malfunctionPic/report.png">
                                                 </button>
                                 <strong><span>故障原因描述</span></strong>
                                 <div class="row" v-for="item in errors" v-if="report_idfind(item.id)===filter_id">
@@ -351,7 +351,7 @@
                             <div class="report-result hidden_big">
                                 <button type="button" class="btn btn-outline-light" data-toggle="modal"
                                                     data-target="#modelId5">
-                                                    <img width="30" src="@/assets/report.png">
+                                                    <img width="30" src="@/assets/malfunctionPic/report.png">
                                                 </button>
                                 <strong><span>處理方式描述</span></strong>
                                 <div class="row" v-for="item in errors" v-if="report_idfind(item.id)===filter_id">
@@ -427,7 +427,7 @@
                             </div>
                             <div class="col-xl-8 col-12">
                                 <div class="mb-3">
-                                    <img class="align-self-center" src="@/assets/break-reason.png" width="25" height="25">
+                                    <img class="align-self-center" src="@/assets/malfunctionPic/break-reason.png" width="25" height="25">
                                     <strong class="ml-3 tibold">故障報告</strong>
                                 </div>
                                  <hr style="background-color:#8192b9;">
@@ -543,7 +543,7 @@
                             </div>
                             <div class="col-xl-8 col-12">
                                 <div class="mb-3">
-                                    <img class="align-self-center" src="@/assets/break-reason.png" width="25" height="25">
+                                    <img class="align-self-center" src="@/assets/malfunctionPic/break-reason.png" width="25" height="25">
                                     <strong class="ml-3 tibold">故障報告</strong>
                                 </div>
                                 <hr style="background-color:#8192b9;">
@@ -665,7 +665,7 @@
                         <div class="container-fluid">
                             <!--手機-->
                             <div class="hidden_big">
-                                <img class="align-self-center" src="@/assets/break-reason.png" width="20" height="20">
+                                <img class="align-self-center" src="@/assets/malfunctionPic/break-reason.png" width="20" height="20">
                                 <strong class="ml-2">故障管理審核</strong>
                                 <div class="row mt-4 text-center tit2">
                                     <div class="col-6">
@@ -746,7 +746,7 @@
                                 </div>
                                 <div class="col-xl-8">
                                     <div class="mb-3">
-                                        <img class="align-self-center" src="@/assets/break-reason.png" width="20" height="20">
+                                        <img class="align-self-center" src="@/assets/malfunctionPic/break-reason.png" width="20" height="20">
                                         <strong class="ml-3 tibold">故障管理審核</strong>
                                     </div>
                                     <hr style="background-color:#8192b9;">
