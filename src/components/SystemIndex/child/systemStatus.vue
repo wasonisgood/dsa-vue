@@ -31,7 +31,7 @@
                     </span>
                 </div>
                 <div class="h-lg-100 w-lg-100 w-xs-100">
-                    <img class="h-xl-100 h-lg-90 image-bg" src="@/assets/home/img/BG.png" />
+                    <img class="h-xl-100 h-lg-90 image-bg" src="@/assets/home/img/1020A.png" />
                 </div>
             </div>
             <div class="h-lg-100 w-lg-50 w-xs-100" style="padding-top: 20px">
@@ -47,7 +47,7 @@
                     </span>
                 </div>
                 <div class="h-lg-100 w-lg-100 w-xs-100">
-                    <img class="h-xl-100 h-lg-90 image-bg" src="@/assets/home/img/BG.png" />
+                    <img class="h-xl-100 h-lg-90 image-bg" src="@/assets/home/img/600A.png" />
                 </div>
             </div>
         </div>
@@ -84,6 +84,7 @@ export default {
     padding: 5px;
     margin-left: 30px;
     background-color: #ecf0f9;
+    width: 5vw;
 }
 .system-img {
     margin-top: 10px;
