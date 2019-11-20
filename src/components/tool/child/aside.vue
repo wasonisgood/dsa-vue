@@ -29,7 +29,7 @@
 	</div>
 </template>
 
-<style>
+<style scoped>
 #menu1{
     top: 1vh;
 	z-index: 99;

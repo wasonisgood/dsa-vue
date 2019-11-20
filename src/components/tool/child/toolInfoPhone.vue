@@ -71,7 +71,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .background-primary{
 	background-color: #eaeff8;
 }

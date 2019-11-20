@@ -53,7 +53,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .text-blue-1{
 	color: #6a7cb1;
 }

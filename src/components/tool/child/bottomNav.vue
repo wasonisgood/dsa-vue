@@ -16,7 +16,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .bottom-navbar{
 	position: fixed;
 	width: 100%;

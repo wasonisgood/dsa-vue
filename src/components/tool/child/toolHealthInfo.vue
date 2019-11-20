@@ -36,7 +36,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .tool-info-left{
 	width: 27.4vw;
 	margin-left: 1.5vw;

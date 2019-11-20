@@ -33,7 +33,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 td{
 	font-weight: normal;
 }

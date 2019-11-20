@@ -17,14 +17,14 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .background-primary{
 	background-color: #eaeff8;
 }
 
 .subtitle{
 	width: calc(100% - 1.57vw);
-	height: 4.814814814vh;
+	height: 4.814814814vh !important;
 	border-bottom: 1px #8192b9 solid;
 	margin-left: 0.785vw;
 }

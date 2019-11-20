@@ -61,7 +61,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 select{
 	text-align-last: center;
     -moz-appearance:none;

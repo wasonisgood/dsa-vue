@@ -15,7 +15,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 .card-header{
 	height: 12%;
 }
