@@ -397,11 +397,6 @@ export default {
 	background-color: #ffffffcc;
 }
 
-.content-container{
-	width: 97.45vw;
-	height: 83.5vh;
-}
-
 .tool-info{
 	width: 100%;
 	height: 37.6vh;
