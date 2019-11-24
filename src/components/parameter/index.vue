@@ -1,4 +1,4 @@
-<template>
+<template scoped>
 	<div class="d-none d-lg-block">
 		<div class="background-primary d-flex w-100">
 			<asideNav></asideNav>

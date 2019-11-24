@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<div id="hide" class="aside d-flex flex-column">
-			<router-link to="tool"><img src="@/assets/tool/aside_1.png" height="30" class="align-self-center"/></router-link> 
-			<router-link to="track"><img src="@/assets/tool/aside_2.png" height="30" class="align-self-center"/></router-link> 
-			<router-link to="waterlevel"><img src="@/assets/tool/aside_3.png" height="30" class="align-self-center"/></router-link> 
-			<router-link to="parameter"><img src="@/assets/tool/aside_4.png" height="30" class="align-self-center"/></router-link> 
+		<div class="aside d-flex flex-column">
+			<router-link to="tool" class="d-flex justify-content-center"><img src="@/assets/tool/aside_1.png" height="30" class="align-self-center"/></router-link> 
+			<router-link to="track" class="d-flex justify-content-center"><img src="@/assets/tool/aside_2.png" height="30" class="align-self-center"/></router-link> 
+			<router-link to="waterlevel" class="d-flex justify-content-center"><img src="@/assets/tool/aside_3.png" height="30" class="align-self-center"/></router-link> 
+			<router-link to="parameter" class="d-flex justify-content-center"><img src="@/assets/tool/aside_4.png" height="30" class="align-self-center"/></router-link> 
 		</div>
 		<div id="menu1" class="hidden-menu">
 			<div class="h-100 d-flex justify-content-center" onclick="javascript:location.href='index.html'">
@@ -52,7 +52,9 @@
 
 .aside{
 	background: linear-gradient( to bottom, rgb(128,146,184), rgb(128,146,184,0.4) );
-	position:relative;
+	position: fixed;
+	left: 0;
+	top: 11.851851851vh;
 	height: 83.5vh;
 	width: 2.55vw;
 	margin: 0;
@@ -94,7 +96,7 @@
     border-bottom: 10px solid transparent;
 }
 
-.material-icons, .hidden-menu, #hide {
+.material-icons, .hidden-menu, .aside {
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
