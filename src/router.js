@@ -7,8 +7,10 @@ import analysis from './components/analysis/index.vue'
 import machine from './components/machine/index.vue'
 // 故障管理
 import malfunction from './components/break/index.vue'
-// 生產管理
-// import manufacture from './components/manufacture/index.vue'
+// 生產管理-用電分析
+import manufacture from './components/manufacture/index.vue'
+// 生產管理-錯誤分析
+import failureAnalysis from './components/failureAnalysis/index.vue'
 // 生產管理下 報價系統/機台分析
 import Cadata from './components/manufacture/報價管理系統/index.vue'
 import toolana from './components/manufacture/機台分析/index.vue'
@@ -44,6 +46,16 @@ export default new Router({
                     name: 'analysis',
                     component: analysis
                 },
+				{
+					path: '/manufacture',
+					name: 'PowerAnalysis',
+					component: manufacture,
+				},
+				{
+					path: '/failureAnalysis',
+					name: 'FailureAnalysis',
+					component: failureAnalysis,
+				},
                 {
                     path: '/manufacture',
                     name: 'Cadata',

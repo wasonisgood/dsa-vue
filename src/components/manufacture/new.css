@@ -1,0 +1,870 @@
+/*bootstrap reset*/
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    height: auto;
+    background-color: #eaeff8;
+    min-height: 100vh;
+}
+
+.btn {
+    padding: 0 !important;
+}
+
+.row {
+    margin: 0px;
+}
+
+.cell .collapse {
+    padding: 25px 10px;
+    margin-top: 10px;
+    border-top: 1px solid #6880ac;
+}
+
+.cell__titlte {
+    width: 100%;
+}
+
+.cell__titlte>img {
+    vertical-align: sub;
+}
+
+.cell__titlte>span {
+    font-size: 18px;
+    color: #464a56;
+    font-family: "Microsoft JhengHei", sans-serif;
+    font-weight: 900;
+}
+
+hr {
+    border: 0;
+    border-top: 1px #C6CAD5 solid;
+}
+
+.send2 {
+    min-width: fit-content;
+    font-size: 14px;
+    background-color: #869CC9;
+    color: white;
+    width: 140px;
+    height: 29px;
+    border-radius: 0px;
+    line-height: 11px;
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+.color-blue {
+    color: #8898bd;
+}
+
+select {
+    width: 157px;
+    height: 27px;
+    color: #6a7cb1;
+    background-color: white;
+    border: 1px solid #8598c1;
+    border-radius: 0px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.select1 {
+    width: 227px;
+    height: 25px;
+    color: #6a7cb1;
+    background-color: white;
+    border-radius: 0px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.select2 {
+    width: 118px;
+    height: 30px;
+    color: #6c81ba;
+    background-color: white;
+    border: 0.5px #8192b9 solid;
+    border-radius: 0px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-align-last: center;
+}
+
+
+/*all*/
+
+* {
+    font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+}
+
+.bodyMid {
+    display: flow-root;
+    position: relative;
+    height: auto;
+    min-height: calc(100vh - 150px);
+}
+
+.modal-backdrop {
+    background-color: unset;
+}
+
+.modal-content {
+    border: 0px;
+    border-radius: unset;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 3px 4px #aaa;
+}
+
+.modal-header {
+    border-radius: 0px;
+    background: #6D80B8;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.modal-header>span {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    padding-left: 13px;
+}
+
+.modal-header button {
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    padding: 0px;
+}
+
+.modal-header button>svg {
+    height: 100%;
+    width: 100%;
+}
+
+#modelId1>.modal-dialog {
+    max-width: 1014px;
+}
+
+#modelId2>.modal-dialog {
+    max-width: 523px;
+}
+
+#modelId3>.modal-dialog {
+    max-width: 1014px;
+}
+
+#operatingStatus .highcharts-axis-line:last-child {
+    stroke-width: 0px
+}
+
+#operatingStatus g.highcharts-axis.highcharts-yaxis.highcharts-grid-axis>path:nth-child(1) {
+    stroke-width: 1px;
+    stroke: #CAD0DC;
+}
+
+#operatingStatus g.highcharts-grid.highcharts-yaxis-grid.highcharts-grid-axis>path:nth-child(2),
+#operatingStatus g.highcharts-grid.highcharts-yaxis-grid.highcharts-grid-axis>path:nth-child(3) {
+    stroke-width: 1px;
+    stroke: #6D80B8;
+}
+
+
+/*side menu*/
+
+#hide {
+    top: 0px;
+    padding-top: 9px;
+    width: 2.5vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #7f92b9;
+    background-image: linear-gradient(#7f92b9, #a6afcc, #c1c7dd);
+    text-align: center;
+}
+
+#hide img {
+    margin: 13px 0;
+}
+
+.hidden-menu {
+    position: absolute;
+    left: 78px;
+    background-color: #7f92b9;
+    color: white;
+    font-size: 19px;
+    padding: 0.8em 2.3rem 0.8rem 4.8rem;
+    display: none;
+    box-shadow: 1px 1px 4px #d2d2d2;
+    background-image: linear-gradient(to bottom right, #ffffff, #9ea1c0, #9499b9);
+    border: 1px #aab0c0 solid;
+}
+
+.hidden-menu .material-icons {
+    font-size: 34px;
+    position: absolute;
+    top: 6px;
+    left: 2rem;
+}
+
+.hidden-menu:before {
+    content: "";
+    position: absolute;
+    right: 104%;
+    top: 37%;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 11px solid #425280;
+    border-bottom: 8px solid transparent;
+}
+
+.material-icons,
+.hidden-menu,
+#hide {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menu1 {
+    top: 8px;
+}
+
+#menu2 {
+    top: 69px;
+}
+
+#menu3 {
+    top: 127px;
+}
+
+#menu4 {
+    top: 188px;
+}
+
+.aside {
+    display: none;
+    margin: 1rem 0vw 1rem 0vw;
+    width: 9.6vw;
+    height: 96vh;
+    background-color: #909ebb;
+    float: left;
+    position: absolute;
+    left: -200px;
+}
+
+.aside span {
+    font-size: 1rem;
+    font-family: "Microsoft JhengHei";
+}
+
+
+/*main*/
+
+.content {
+    margin-left: 3.96875vw;
+    margin-top: 2.574074vh;
+    width: 94.5625vw;
+    height: 77.53703vh;
+    /*
+    margin: 1rem;
+    margin-bottom: 3.8rem; 
+    width: calc( 100% - 4.5rem);
+    min-height: calc(100vh - 2rem);
+    float: right;
+    */
+}
+
+.cell {
+    padding: 9px 5.5px;
+}
+
+.cellContent {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1.5px solid #bbc4d2;
+    padding: 15px 25px 11px;
+}
+
+.hideCell {
+    padding: 0px;
+}
+
+div[data-toggle=collapse]>img {
+    vertical-align: text-bottom;
+}
+
+
+/*期間電費估算 table*/
+
+.dataSetBoard {
+    background-color: #EBEFF8;
+    margin: auto;
+    border: 0.5px #8192b9 solid;
+    padding: 13px 20px 4px;
+}
+
+.dataSetBoard__title {
+    display: flex;
+    padding-bottom: 8px;
+    align-items: center;
+    border-bottom: 1px #C6CAD5 solid;
+}
+
+.dataSetBoard__title>span {
+    font-size: 14px;
+    color: #8092b8;
+    margin-right: auto;
+    /*有的最右側會有按鈕*/
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+.dataSetBoard__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.dataSetBoard__body>div {
+    text-align: center;
+    margin: 11px auto;
+}
+
+.dataSetBoard__body>div span {
+    font-size: 12px;
+    color: #99969f;
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+
+/*期間電費估算 圖*/
+
+.piechartDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 545px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#container_pie {
+    min-width: 298px;
+    width: 360px;
+    height: 340px;
+}
+
+.piechartBorder {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.piechartBorderTop {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.piechartBorderBT {
+    flex: 1;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.piechartbox {
+    text-align: center;
+    border: 1px solid #8898bd;
+    width: 125px;
+    height: 175px;
+    border-radius: .55rem;
+    color: #6a7cb1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+.piechartbox>span {
+    height: fit-content;
+}
+
+.piechartbox>span>hr {
+    border-image: radial-gradient(circle, #D7D8DD 26%, transparent 88%);
+    border-image-slice: 1;
+}
+
+
+/*Modal table*/
+
+.input-group input,
+.input-group span {
+    border-radius: 0px;
+    font-size: 10px;
+    color: #959dc1;
+}
+
+.inputTable td {
+    width: calc( 100% / 3);
+    border-top: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.inputTable td>div>div,
+.inputTable td>div>div input,
+.inputTable td>div>div span {
+    font-size: 11px;
+    height: 29px;
+}
+
+.inputTable td>div>div input,
+.inputTable td>div>div span {
+    color: #959dc1;
+}
+
+.input-group ::placeholder {
+    color: #6a7cb1;
+    font-size: 13px;
+}
+
+.inputTable ::placeholder {
+    color: #959dc1;
+    font-size: 10px;
+}
+
+.inputTable .row {}
+
+.inputTable tr {
+    height: 42px;
+}
+
+.inputTable .col-lg-8,
+.inputTable .col-lg-7,
+.inputTable .col-lg-6,
+.inputTable .col-lg-5,
+.inputTable .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputTable .col-8 {
+    padding: 0px;
+}
+
+.inputTable .col-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputDegree {
+    text-align: right;
+    height: 25px
+}
+
+.inputTable tbody {
+    display: block;
+    margin: 8px auto;
+    background: #eaeef7;
+    position: relative;
+}
+
+.inputTable thead {
+    background: #8192b9;
+    color: #fff;
+    height: 29px;
+    vertical-align: middle;
+}
+
+.inputs .inputUnit {
+    background: #fff;
+    border-left: none;
+    padding-right: 17px;
+    padding-left: 0px;
+}
+
+.inputUnitNT {
+    background: #fff;
+    border-left: none;
+    padding-right: 16px;
+    padding-left: 0px;
+}
+
+.inputDegree {
+    border-right: none;
+    padding-right: .25rem;
+}
+
+.plotModal {
+    padding: 1rem 51px 66px 51px;
+}
+
+.plotModal__title {
+    border-bottom: 2px #C6CAD5 solid;
+    padding-bottom: 16px;
+}
+
+.plotModal__title>img {
+    margin-right: 10px;
+}
+
+.plotModal__title>span {
+    font-size: 17px;
+    font-weight: bolder;
+    color: #464a56;
+    vertical-align: middle
+}
+
+.plotModal__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plotModal__plotBlock {
+    border: 1px solid #bbc4d2;
+    flex: 5;
+    min-width: 200px;
+    margin-top: 16px;
+    margin-left: 24px;
+    margin-right: 34px;
+    padding-top: 26px;
+    background-color: #FFF;
+    height: 337px;
+}
+
+.HorizontalSeries {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 13px;
+    padding-right: 30px;
+}
+
+#modallinechartDiv {
+    height: 270px;
+    max-width: 657px;
+}
+
+.dataSetBoard--vertical {
+    flex: 1;
+    margin: 28px 14px 16px 14px;
+    padding: 10px 8px;
+}
+
+.dataSetBoard--vertical .dataSetBoard__title>span {
+    font-size: 12px;
+    padding-left: 6px;
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+.dataSetBoard--vertical select {
+    margin-top: 4px;
+}
+
+.dataSetBoard--vertical .dataSetBoard__body>div {
+    margin-top: 11px;
+    margin-bottom: 3px;
+}
+
+.dataSetBoard--vertical .send2 {
+    height: 29px;
+    font-size: 12px;
+}
+
+.dataSetBoard--vertical .dataSetBoard__body>.plotModelQueryBlock {
+    height: 102px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.madelAnalysisSet__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8092b8;
+}
+
+
+/*table*/
+
+.table-analyze {
+    margin-top: 10px;
+    margin-bottom: 27px;
+    font-size: 14px;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-spacing: 0;
+}
+
+.table-analyze th {
+    color: #fff;
+    background-color: #879CC7;
+    padding: .75rem 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.table-analyze tr {
+    height: 35px;
+}
+
+.table-analyze td {
+    color: #949dc1;
+    font-family: "Microsoft JhengHei Light", sans-serif;
+}
+
+.table-analyze td:nth-child(1),
+.table-analyze td:nth-child(2),
+.table-analyze td:nth-child(3) {
+    border-right: 1px #E5E6EA solid;
+}
+
+.table-analyze tr:last-child td {
+    border-bottom: 1px #E5E6EA solid;
+}
+
+
+/*price*/
+
+.capsule {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.capsule>div {
+    width: 236px;
+    display: flex;
+}
+
+.capsule>div>div {
+    font-size: 17.7px;
+    height: 47px;
+    width: 118px;
+    text-align: center;
+    line-height: 47px;
+    border: 1px solid #84c5d7;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.capsule>div div:nth-child(1) {
+    background-color: #84c5d7;
+    color: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.capsule>div div:nth-child(2) {
+    color: #84c5d7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.capsule.capsule--sm>div {
+    width: 206px;
+    display: flex;
+}
+
+.capsule.capsule--sm>div>div {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15.6px;
+}
+
+
+/*最高用電統計*/
+
+.cellHE {
+    padding-bottom: 5px;
+}
+
+#collapseHE {
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.colchartDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1166px;
+    margin: auto;
+}
+
+#container_col {
+    height: 315px;
+    width: 857px;
+    /*不設寬度，縮小後不回變回去*/
+    margin-top: 19px;
+}
+
+.colchartDescription {
+    margin-top: 3px;
+    flex: 2;
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.plotSeries {
+    width: 170px;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.plotSeries img {
+    padding: 6px 0px
+}
+
+.plotSeries>div:nth-child(2) {
+    text-align: center;
+    flex: 1;
+    color: #8898bd;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.colchartDescription .plotSeries {
+    width: 210px;
+}
+
+
+/*功率因素*/
+
+#collapsePC {
+    padding: 0px;
+}
+
+.QueryBlockPC {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.linechartDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*max-width: 890px;*/
+}
+
+.mt-20px {
+    margin-top: 20px;
+}
+
+#container_line {
+    margin-top: 25px;
+    flex: 6;
+    height: 295px;
+    width: 700px;
+    /*不設寬度，縮小後不回變回去*/
+    min-width: 260px;
+    margin-right: 32px;
+}
+
+.dis_flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.PC_tielte_right {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 5.5%;
+}
+
+.PC_tielte_right button {
+    margin-left: 37px;
+}
+
+.width-auto {
+    width: auto;
+}
+
+
+/*圖表*/
+
+.pieWord {
+    color: #6a7cb1;
+    text-align: center;
+    font-size: 19px;
+}
+
+.pieWord>div:nth-child(1) {
+    height: 20px;
+}
+
+.pieWord>div:nth-child(2) {
+    font-size: 47px;
+    height: 60px;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+.pieWord>hr {
+    margin: .25rem 0px;
+    border-top: 1px solid #6A7CAE;
+}
+
+.hr1 {
+    border-image: radial-gradient(circle, #949dc1, transparent);
+    border-image-slice: 5;
+    margin: auto;
+    width: 25rem;
+}
+
+.hr2 {
+    border-image: radial-gradient(circle, #949dc1, transparent);
+    border-image-slice: 11;
+    margin: auto;
+    width: 11.3rem;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    height: 5.4rem;
+}
+
+.colors {
+    display: none;
+}
